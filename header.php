@@ -31,7 +31,7 @@
 						<div class="brand col-3">Logo</div>
 						<div class="second-column col-9">
 							<div class="acount">Account</div>
-							<nav class="main-menu d-inline">
+							<nav class="main-menu">
 							<?php
 								wp_nav_menu(
 									array(

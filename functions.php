@@ -32,7 +32,7 @@ function sixty4kitchen_config(){
 	register_nav_menus(
 		array(
             'sixty4kitchen_main_menu' 	=> '64 Kitchen Main Menu',
-            'second'                    => 'Second Menu',
+            'sixty4kitchen_footer_menu' => '64 Kitchen Footer Menu',
 		)
 	);
 }
