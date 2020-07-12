@@ -1,2 +1,2 @@
 # 64kitchen
-Learning how to build a WordPress theme with WooCommerce support
+This project will serve as a theme to be deployed to a Food Delivery Online Business
