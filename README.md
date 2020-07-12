@@ -1,2 +1,2 @@
 # 64kitchen
-This project will serve as a theme to be deployed to a Food Delivery Online Business
+This project will serve as a theme to a Food Delivery Online Business which will be used by 64kitchen.qa
