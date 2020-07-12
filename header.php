@@ -28,10 +28,18 @@
 			<section class="top-bar">
 				<div class="container">
 					<div class="row">
-						<div class="brand col-3 col-sm-6">Logo</div>
-						<div class="second-column col-9 col-sm-6">
+						<div class="brand col-3">Logo</div>
+						<div class="second-column col-9">
 							<div class="acount">Account</div>
-							<nav class="main-menu">Menu</nav>
+							<nav class="main-menu d-inline">
+							<?php
+								wp_nav_menu(
+									array(
+										'theme_location' => 'sixty4kitchen_main_menu'
+									)
+								);
+							?>
+							</nav>
 						</div>
 					</div>
 				</div>

@@ -12,15 +12,22 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, translation-ready, blog, right-sidebar, sticky-post, threaded-comments
 */
 
-.top-bar{
-    background: red;
-    height: 70px;
-}
-
 .brand{
     background: green;
 }
 
 .second-column{
     background: yellow;
+}
+
+.main-menu ul{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-menu ul li{
+    display: inline;
+    margin: 0 5px 0 0;
 }
