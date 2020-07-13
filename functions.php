@@ -18,6 +18,9 @@ function sixty4kitchen_scripts(){
 
     // Theme's main stylesheet (change before deployment)
     wp_enqueue_style( 'sixty4kitchen-style', get_stylesheet_uri(), array(), filemtime( get_template_directory() . '/style.css' ), 'all' ); //change before deployment
+
+    // Google Fonts
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Seaweed+Script&display=swap' );
 }
 add_action( 'wp_enqueue_scripts', 'sixty4kitchen_scripts' );
 
