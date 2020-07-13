@@ -53,15 +53,22 @@ add_action( 'wp', 'sixty4kitchen_wc_modify' );
 
 
 //Removing postal codes
-add_filter( 'woocommerce_checkout_fields' , 'sixty4kitchen_remove_billing_postcode_checkout' );
+add_filter( 'woocommerce_checkout_fields' , 'sixty4kitchen_remove_billing_fields_checkout' );
  
-function sixty4kitchen_remove_billing_postcode_checkout( $fields ) {
+function sixty4kitchen_remove_billing_fields_checkout( $fields ) {
   unset($fields['billing']['billing_postcode']);
   unset($fields['billing']['billing_company']);
   unset($fields['billing']['billing_state']);
   return $fields;
 }
 
+add_filter( 'woocommerce_checkout_fields' , 'sixty4kitchen_remove_shipping_fields_checkout' );
+function sixty4kitchen_remove_shipping_fields_checkout( $fields ) {
+    unset($fields['shipping']['shipping_postcode']);
+    unset($fields['shipping']['shipping_company']);
+    unset($fields['shipping']['shipping_state']);
+    return $fields;
+  }
 
 // filtering subtotals
 add_filter( 'woocommerce_get_order_item_totals', 'remove_subtotal_from_orders_total_lines', 100, 1 );

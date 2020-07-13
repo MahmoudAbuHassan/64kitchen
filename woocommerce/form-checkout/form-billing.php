@@ -2,7 +2,8 @@
 /**
  * Checkout billing information form
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/checkout/form-billing.php.
+ * This is the overridden template. Modifications:
+ * 	-removed subtotal
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
