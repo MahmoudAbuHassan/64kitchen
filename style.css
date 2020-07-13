@@ -12,6 +12,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, translation-ready, blog, right-sidebar, sticky-post, threaded-comments
 */
 
+
+
 /* Header - Main Menu */
 .main-menu{
     padding: 0;
@@ -33,6 +35,7 @@ Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, the
 .main-menu ul li:last-child{ 
     margin: 0; 
 }
+
 
 /* Footer - Footer Menu */
 .footer-menu ul, .footer-widgets ul{ 
@@ -59,6 +62,7 @@ Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, the
 .footer-menu ul li.current-menu-item a{ 
     color: #ff9292; 
 }
+
 
 /* WooCommerce */
 
@@ -177,6 +181,117 @@ Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, the
 .woocommerce nav.woocommerce-pagination ul li span {
     padding: 12px;
 }
+
+
+/* Single Product */
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt,
+.woocommerce ul.products li.product .button {
+    background-color: #D2335B;
+    color: #fff;
+}
+
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover,
+.woocommerce ul.products li.product .button:hover {
+    background-color: #bd3759;
+}
+
+.product_meta > span{
+    display: block;
+}
+
+.woocommerce div.product p.price del, 
+.woocommerce div.product span.price del,
+.woocommerce ul.products li.product .price del .woocommerce-Price-amount{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.woocommerce div.product p.price ins, 
+.woocommerce div.product span.price ins, 
+.woocommerce-Price-amount {
+    font-size: 25px;
+    color: #000;
+    font-weight: 700;
+}
+
+.woocommerce span.onsale{
+    top: 19px;
+    left: 35px;
+    transform: rotate(90deg);
+    border-radius: 0;   
+    width: 84px;
+    padding: 0;
+    background-color: #D2335B;
+    margin: 0;
+    font-weight: 400;
+}
+
+.woocommerce span.onsale:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 83px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 23px 22px 0 0;
+    border-color: #D2335B transparent transparent transparent;
+}
+
+.woocommerce span.onsale:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 83px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 22px 23px 0;
+    border-color: transparent transparent #D2335B transparent;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs{
+    padding: 0;
+
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li{
+    border-radius: 0;
+    margin: 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after, 
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before{
+    content: none;
+}
+
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button{
+    background-color: #ffeb8a;
+}
+
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover{
+    background-color: #ffe252;
+}
+
+/* Cart */
+
+.woocommerce-cart table.cart td.actions .coupon .input-text{
+    width: 150px;
+}
+
 
 /* General */
 
