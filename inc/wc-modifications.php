@@ -35,10 +35,4 @@ function sixty4kitchen_close_container_row(){
     echo '</div></div>';
 }
 
-// add_filter( 'woocommerce_show_page_title', 'sixty4kitchen_remove_shop_title' );
-// function sixty4kitchen_remove_shop_title( $val ){
-//     $val = false;
-//     return $val;
-// }
-
 add_action( 'woocommerce_after_shop_loop_item_title', 'the_excerpt', 1 );
