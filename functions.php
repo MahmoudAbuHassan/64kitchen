@@ -62,3 +62,17 @@ add_action( 'after_setup_theme', 'sixty4kitchen_config', 0 );
 if( class_exists( 'WooCommerce' )){
     require get_template_directory() . '/inc/wc-modifications.php';
 }
+
+add_filter( 'woocommerce_checkout_fields' , 'sixty4kitchen_remove_billing_postcode_checkout' );
+ 
+function sixty4kitchen_remove_billing_postcode_checkout( $fields ) {
+  unset($fields['billing']['billing_postcode']);
+  return $fields;
+}
+
+add_filter( 'woocommerce_get_order_item_totals', 'remove_subtotal_from_orders_total_lines', 100, 1 );
+
+function remove_subtotal_from_orders_total_lines( $totals ) {
+    unset($totals['cart_subtotal']  );
+    return $totals;
+}

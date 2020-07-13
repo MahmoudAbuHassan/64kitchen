@@ -292,6 +292,40 @@ Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, the
     width: 150px;
 }
 
+/* Checkout Page */
+    /* Grid */
+    .woocommerce .col2-set .col-1,
+    .woocommerce .col2-set .col-2{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+@media all and (max-width: 767px) {
+    .woocommerce .col2-set .col-1,
+    .woocommerce .col2-set .col-2{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+}
+
+.woocommerce form .form-row {
+    display: block;
+}
+.woocommerce-checkout #customer_details{
+    margin-bottom: 20px;
+}
+.woocommerce-checkout #customer_details{
+    margin-bottom: 20px;
+}
+.woocommerce table.shop_table{
+    border-collapse: collapse;
+}
+.woocommerce table.shop_table thead{
+    background-color: #D2335B;
+    color: #fff;
+}
 
 /* General */
 
