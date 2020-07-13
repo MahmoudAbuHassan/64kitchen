@@ -58,4 +58,7 @@ function sixty4kitchen_config(){
 }
 
 add_action( 'after_setup_theme', 'sixty4kitchen_config', 0 );
-require get_template_directory() . '/inc/wc-modifications.php';
+
+if( class_exists( 'WooCommerce' )){
+    require get_template_directory() . '/inc/wc-modifications.php';
+}
