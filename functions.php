@@ -27,6 +27,13 @@ function sixty4kitchen_scripts(){
 
     // Google Fonts
     wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Seaweed+Script&display=swap' );
+
+    // Flexslider Javascript and CSS files
+    wp_enqueue_script( 'flexslider-min-js', get_template_directory_uri() . '/inc/flexslider/jquery.flexslider-min.js', array( 'jquery' ), '', true );
+    wp_enqueue_style( 'flexslider-css', get_template_directory_uri() . '/inc/flexslider/flexslider.css', array(), '', 'all');
+    wp_enqueue_script( 'flexslider-js', get_template_directory_uri() . '/inc/flexslider/flexslider.js', array( 'jquery' ), '', true );
+    
+    
 }
 add_action( 'wp_enqueue_scripts', 'sixty4kitchen_scripts' );
 
@@ -66,6 +73,8 @@ function sixty4kitchen_config(){
         'flex_height'   => true,
         'flex_width'    => true
     ) );
+
+    add_image_size( 'sixty4kitchen-slider', 1920, 800, array( 'center', 'center' ) );
 
     if ( ! isset( $content_width ) ) {
         $content_width = 600;

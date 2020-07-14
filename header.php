@@ -23,33 +23,32 @@
 			<section class="top-bar">
 				<div class="container">
 					<div class="row">
-						<div class="brand col-12 col-md-3  col-lg-2 text-center text-md-left">
+						<div class="brand col-md-3 col-12 col-lg-2 text-center text-md-left">
 							<a href="<?php echo home_url( '/' ) ?>">
-								<?php 
-									if( has_custom_logo() ): 
-										the_custom_logo(); 
-								 	else: 
-								 ?>
-									<p class="site-title"><?php bloginfo( 'title' ) ?></p>
-									<span><?php bloginfo( 'description' ) ?></span>
+								<?php if( has_custom_logo() ): ?>
+									<?php the_custom_logo(); ?>	
+								 <?php else: ?>	 
+									<p class="site-title"><?php bloginfo( 'title' ); ?></p>
+									<span><?php bloginfo( 'description' ); ?></span>
 								<?php endif; ?>
 							</a>
 						</div>
-						<div class="second-column col-12 col-md-9 col-12 col-lg-10">
+						<div class="second-column col-md-9 col-12 col-lg-10">
 							<div class="row">
-								<?php if( class_exists( 'WooCommerce' )): ?>
+								<?php if( class_exists( 'WooCommerce' ) ): ?>
 								<div class="account col-12">
 									<div class="navbar-expand">
 										<ul class="navbar-nav float-left">
 											<?php if( is_user_logged_in() ) : ?>
 												<li>
-													<a href="<?php echo esc_url(get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link">My Account</a>
+													<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link">My Account</a>
 												</li>
 												<li>
 													<a href="<?php echo esc_url( wp_logout_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ) ?>" class="nav-link">Logout</a>
 												</li>
 											<?php else: ?>
-												<a href="<?php echo esc_url(get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link">Login / Register</a>
+												<li>
+												<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link">Login / Register</a>
 												</li>
 											<?php endif; ?>
 										</ul>
@@ -63,7 +62,7 @@
 								<div class="col-12">
 									<nav class="main-menu navbar navbar-expand-md navbar-light" role="navigation">
 											<!-- Brand and toggle get grouped for better mobile display -->
-											<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" 	aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+											<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 												<span class="navbar-toggler-icon"></span>
 											</button>
 											<?php
