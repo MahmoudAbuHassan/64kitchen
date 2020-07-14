@@ -9,6 +9,14 @@
  */
 
 /**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+/**
 * Enqueue scripts and styles.
 */ 
 function sixty4kitchen_scripts(){ 
@@ -62,6 +70,10 @@ function sixty4kitchen_config(){
 
 add_action( 'after_setup_theme', 'sixty4kitchen_config', 0 );
 
+
+
+// WooCommerce Modifications
 if( class_exists( 'WooCommerce' )){
     require get_template_directory() . '/inc/wc-modifications.php';
 }
+
