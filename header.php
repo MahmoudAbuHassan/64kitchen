@@ -23,7 +23,18 @@
 			<section class="top-bar">
 				<div class="container">
 					<div class="row">
-						<div class="brand col-12 col-md-3  col-lg-2 text-center text-md-left">Logo</div>
+						<div class="brand col-12 col-md-3  col-lg-2 text-center text-md-left">
+							<a href="<?php echo home_url( '/' ) ?>">
+								<?php 
+									if( has_custom_logo() ): 
+										the_custom_logo(); 
+								 	else: 
+								 ?>
+									<p class="site-title"><?php bloginfo( 'title' ) ?></p>
+									<span><?php bloginfo( 'description' ) ?></span>
+								<?php endif; ?>
+							</a>
+						</div>
 						<div class="second-column col-12 col-md-9 col-12 col-lg-10">
 							<div class="row">
 								<?php if( class_exists( 'WooCommerce' )): ?>
