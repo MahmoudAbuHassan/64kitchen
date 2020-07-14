@@ -48,6 +48,26 @@ body{
     background-image: url('img/hamburger-menu.svg');
 }
 
+/* Cart */
+.cart .cart-icon{
+    background: url('img/cart.svg');
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.cart .items{
+    background: #CA2424;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
 /* Footer - Footer Menu */
 .footer-menu ul, .footer-widgets ul{ 
     list-style: none; 
