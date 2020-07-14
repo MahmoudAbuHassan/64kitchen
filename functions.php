@@ -9,9 +9,10 @@
  */
 
 /**
- * Register Custom Navigation Walker
+ * Register Custom Navigation Walker and customizer.php
  */
 	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+    require_once get_template_directory() . '/inc/customizer.php';
 
 /**
 * Enqueue scripts and styles.
