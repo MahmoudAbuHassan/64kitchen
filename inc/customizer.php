@@ -215,7 +215,147 @@ function sixty4kitchen_customizer( $wp_customize ){
             'type'          => 'url'
         )
     );
-}
 
+
+//---------------------------------------------------------------------------------------------
+//  Home Page Settings
     
+    $wp_customize->add_section(
+        'sec_home_page', array(
+            'title'         => 'Home Page Products and Blog Settings',
+            'description'   => 'Home Page Section'
+        )
+    );
+
+//  Popular Products
+
+    $wp_customize->add_setting(
+        'set_popular_max_num', array(
+            'type'                  => 'theme_mod',
+            'default'               => '',
+            'sanitize_callback'     => 'absint'
+        )
+    );
+
+    $wp_customize->add_control(
+        'set_popular_max_num', array(
+            'label'         => 'Popular Products Max Number',
+            'description'   => 'Popular Products Max Number',
+            'section'       => 'sec_home_page',
+            'type'          => 'number'
+        )
+    );    
+
+    $wp_customize->add_setting(
+        'set_popular_max_num', array(
+            'type'                  => 'theme_mod',
+            'default'               => '',
+            'sanitize_callback'     => 'absint'
+        )
+    );
+
+    $wp_customize->add_control(
+        'set_popular_max_num', array(
+            'label'         => 'Popular Products Max Number',
+            'description'   => 'Popular Products Max Number',
+            'section'       => 'sec_home_page',
+            'type'          => 'number'
+        )
+    );    
+
+    $wp_customize->add_setting(
+        'set_popular_max_col', array(
+            'type'                  => 'theme_mod',
+            'default'               => '',
+            'sanitize_callback'     => 'absint'
+        )
+    );
+
+    $wp_customize->add_control(
+        'set_popular_max_col', array(
+            'label'         => 'Popular Products Max Columns',
+            'description'   => 'Popular Products Max Columns',
+            'section'       => 'sec_home_page',
+            'type'          => 'number'
+        )
+    ); 
+    
+    // New Arrivals
+
+    $wp_customize->add_setting(
+        'set_new_arrivals_max_num', array(
+            'type'                  => 'theme_mod',
+            'default'               => '',
+            'sanitize_callback'     => 'absint'
+        )
+    );
+
+    $wp_customize->add_control(
+        'set_new_arrivals_max_num', array(
+            'label'         => 'New Arrivals Max Number',
+            'description'   => 'New Arrivals Max Number',
+            'section'       => 'sec_home_page',
+            'type'          => 'number'
+        )
+    );    
+
+    $wp_customize->add_setting(
+        'set_new_arrivals_max_col', array(
+            'type'                  => 'theme_mod',
+            'default'               => '',
+            'sanitize_callback'     => 'absint'
+        )
+    );
+
+    $wp_customize->add_control(
+        'set_new_arrivals_max_col', array(
+            'label'         => 'New Arrivals Max Columns',
+            'description'   => 'New Arrivals Max Columns',
+            'section'       => 'sec_home_page',
+            'type'          => 'number'
+        )
+    ); 
+    
+    // Deal of the Week Checkbox
+
+    $wp_customize->add_setting(
+        'set_deal_show', array(
+            'type'                  => 'theme_mod',
+            'default'               => '',
+            'sanitize_callback'     => 'sixty4kitchen_sanitize_checkbox'
+        )
+    );
+
+    $wp_customize->add_control(
+        'set_deal_show', array(
+            'label'         => 'Show Deal of the Week?',
+            'section'       => 'sec_home_page',
+            'type'          => 'checkbox'
+        )
+    ); 
+    
+    // Deal of the Week Product ID
+    
+    $wp_customize->add_setting(
+        'set_deal', array(
+            'type'                  => 'theme_mod',
+            'default'               => '',
+            'sanitize_callback'     => 'absint'
+        )
+    );
+
+    $wp_customize->add_control(
+        'set_deal', array(
+            'label'         => 'Deal of the Week Product ID',
+            'description'   => 'Product ID to Display',
+            'section'       => 'sec_home_page',
+            'type'          => 'number'
+        )
+    ); 
+
+}
 add_action( 'customize_register', 'sixty4kitchen_customizer' );
+
+function sixty4kitchen_sanitize_checkbox( $checked ){
+    return ( ( isset ( $checked )  && true == $checked ) ? true : false );
+}
