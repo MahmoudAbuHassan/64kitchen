@@ -58,13 +58,13 @@ get_header(); ?>
 					 $arrivals_col = get_theme_mod( 'set_new_arrivals_max_col', 4 );
 					?>
 					<div class="container">
-						<h2>Popular Products</h2>
+						<h2><?php echo get_theme_mod( 'set_popular_text', 'Popular Products' ); ?></h2>
 						<?php echo do_shortcode( '[products limit=" ' . $popular_limit . ' " columns=" ' . $popular_col . ' " orderby="popularity"]') ?>
 					</div>
 				</section>
 				<section class="new-arrivals">
 					<div class="container">
-						<h2>New Arrivals</h2>
+						<h2><?php echo get_theme_mod( 'set_new_arrivals_text', 'New Arrivals' ); ?></h2>
 						<?php echo do_shortcode( '[products limit=" ' . $arrivals_limit . ' " columns=" ' . $arrivals_col . ' " orderby="date"]' ); ?>
 					</div>
 					<?php if ( class_exists( 'WooCommerce' ) ): ?>
@@ -80,7 +80,7 @@ get_header(); ?>
 				?>
 					<section class="deal-of-the-week">
 						<div class="container">
-							<h2>Deal of the Week <?php echo $discount_percentage ?></h2>
+							<h2><?php echo get_theme_mod( 'set_deal_text', 'Deal of the Week' ), $discount_percentage ?></h2>
 							<div class="row d-flex align-items-center">
 								<div class="deal-img col-md-6 col-12 ml-auto text-center">
 									<?php echo get_the_post_thumbnail( $deal, 'large', array( 'class' => 'img-fluid' ) ); ?>
