@@ -125,22 +125,41 @@ get_header(); ?>
 					</section>
 				<?php endif; ?>
 				<?php endif; ?>
-				<section class="lab-blog">
+				<section class="sixty4kitchen-blog">
 					<div class="container">
 						<div class="row">
 							<?php
+
+							$args = array(
+								'post_type'			=> 'post',
+								'posts_per_page'	=>	'2'
+							);
+
+							$blog_posts = new WP_Query( $args );
+
 								// If there are any posts 
-								if( have_posts() ):
+								if( $blog_posts->have_posts() ):
 
 									// Load posts loop
-									while( have_posts() ): the_post();
+									while( $blog_posts->have_posts() ): $blog_posts->the_post();
 										?>
-											<article>
-												<h2><?php the_title(); ?></h2>
-												<div><?php the_content(); ?></div>
+											<article class="col-12 col-md-6">
+												<a href="<?php the_permalink(); ?>">
+													<?php 
+														if( has_post_thumbnail() ):
+															the_post_thumbnail( 'sixty4kitchen_blog', array( 'class' => 'img-fluid' ) );
+														endif;
+													?>
+												</a>
+												<h3>
+													<a href="<? the_permalink(); ?>"></a>
+													<?php the_title(); ?>
+												</h3>
+												<div class="excerpt"><?php the_excerpt(); ?></div>
 											</article>
 										<?php
 									endwhile;
+									wp_reset_postdata();
 								else:	
 							?>
 								<p>Nothing to display.</p>
