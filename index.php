@@ -16,8 +16,6 @@ get_header();
 ?>
 		<div class="content-area">
 			<main>
-								) );	
-							?>
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-9 col-md-8 col-12">
