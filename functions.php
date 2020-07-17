@@ -56,14 +56,15 @@ function sixty4kitchen_config(){
         'thumbnail_image_width' => 255,
         'single_image_width'	=> 255,
         'product_grid' 			=> array(
-            'default_rows'    => 10,
-            'min_rows'        => 5,
-            'max_rows'        => 10,
-            'default_columns' => 1,
-            'min_columns'     => 1,
-            'max_columns'     => 1,				
+            'default_rows'      => 10,
+            'min_rows'          => 5,
+            'max_rows'          => 10,
+            'default_columns'   => 1,
+            'min_columns'       => 1,
+            'max_columns'       => 1,				
         )
     ) );
+
     add_theme_support( 'wc-product-gallery-zoom' );
     add_theme_support( 'wc-product-gallery-lightbox' );
     add_theme_support( 'wc-product-gallery-slider' );
@@ -109,4 +110,17 @@ function sixty4kitchen_woocommerce_header_add_to_cart_fragment( $fragments ) {
 	<?php
 	$fragments['span.items'] = ob_get_clean();
 	return $fragments;
+}
+
+add_action( 'widgets_init', 'sixty4kitchen_sidebars' );
+function sixty4kitchen_sidebars(){
+    register_sidebar( array(
+        'name'          => '64 Kitchen Main Sidebar',
+        'id'            => 'sixty4kitchen-side-bar-1',
+        'description'   => 'Drag and drop your widgets here',
+        'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class ="widget-title">',
+        'after_title'   => '</h4>'
+    ) );
 }
