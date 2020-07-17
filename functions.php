@@ -116,11 +116,11 @@ add_action( 'widgets_init', 'sixty4kitchen_sidebars' );
 function sixty4kitchen_sidebars(){
     register_sidebar( array(
         'name'          => '64 Kitchen Main Sidebar',
-        'id'            => 'sixty4kitchen-side-bar-1',
+        'id'            => 'sixty4kitchen-sidebar-1',
         'description'   => 'Drag and drop your widgets here',
         'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h4 class ="widget-title">',
+        'before_title'  => '<h4 class="widget-title">',
         'after_title'   => '</h4>'
     ) );
 }
