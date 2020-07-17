@@ -27,8 +27,9 @@ get_header();
 									while( have_posts() ): the_post();
 										?>
 											<article <?php post_class(); ?> >
-												<a href="<? the_permalink();  ?>">
-													<h2><?php the_title(); ?></h2>
+												<h2>
+												<a href="<?php the_permalink();  ?>"> <?php the_title(); ?>
+												</h2>
 												</a>
 												<div class="post-thumbnail">
 													<?php 
