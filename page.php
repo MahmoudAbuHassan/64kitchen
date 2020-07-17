@@ -24,22 +24,10 @@ get_header();
 
 									// Load posts loop
 									while( have_posts() ): the_post();
-										?>
-											<article class="col">
-												<h1><?php the_title(); ?></h1>
-												<div><?php the_content(); ?></div>
-												<?php 
-													if( comments_open() || get_comments_number() ):
-														comments_template();
-													endif;											 
-												?>
-											</article>
-										<?php
+										get_template_part( 'template-parts/content', 'page' );
 									endwhile;
-								else:	
-							?>
-								<p>Nothing to display.</p>
-							<?php endif; ?>
+								endif;
+								?>
 						</div>
 					</div>
 				</section>
