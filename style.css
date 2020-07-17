@@ -4,7 +4,7 @@ Theme URI: https://github.com/MahmoudAbuHassan/64kitchen
 Author: Mahmoud AbuHassan
 Author URI: https://mahmoudabuhassan.com
 Description: This theme is for learning purposes
-Fancy Lab is a compatible WooCommerce theme made with WordPress. It is the best theme for you to sell anything online, beautifuly designed and fully responsive.
+64 Kitchen is a compatible WooCommerce theme made with WordPress. It is the best theme for you to sell anything online, beautifuly designed and fully responsive.
 Version: 1.0
 Text-domain: 64Kitchen
 License: GNU General Public License v2 or later
@@ -441,28 +441,6 @@ header .brand img{
     margin-top: 10px;      
 }
 
-/* Blog Section */
-.sixty4kitchen-blog img{
-    margin: 15px 0;
-}
-
-.sixty4kitchen-blog h3{
-    margin-bottom: 0;
-}
-
-.sixty4kitchen-blog h3 a{
-    color: #d83a65;  
-    font-weight: 700;      
-}
-
-.sixty4kitchen-blog .pub-date{
-    margin-bottom: 0.6rem;
-    display: block;
-}
-
-.sixty4kitchen-blog .excerpt{
-    color: #848484;
-}
 
 /* Footer - Footer Menu */
 .footer-menu ul, .footer-widgets ul{ 
@@ -742,6 +720,243 @@ header .brand img{
     background-color: #D2335B;
     color: #fff;
 }
+
+
+/* Blog and Archive Pages */
+.blog article, 
+.archive article{
+    margin-bottom: 3rem;        
+}
+
+.blog article .title, 
+.archive article .title{
+    font-weight: 600;        
+}
+
+.blog article .meta, 
+.archive article .meta{
+    font-weight: 700;
+    margin: 1rem 0;    
+}
+
+.archive-title{
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 1px solid #efefef;
+    padding: 0 0 0.7rem 0;
+    margin-bottom: 1rem;
+}
+
+.archive-title span{
+    color: #b58e8e;
+    font-weight: normal;
+}
+
+.blog .post-thumbnail,
+.archive .post-thumbnail{
+    margin: 1rem 0;
+}
+
+.nav-links{
+    font-weight: 700;
+}
+
+.nav-links span,
+.nav-links a{
+    padding: 0.4rem;
+}
+
+
+/* Single */
+.single header h1{
+    font-weight: 700;
+}
+
+.single .post-thumbnail{
+    margin: 1rem 0;
+}
+
+.comments-area{
+    border-top: 1px solid #eee;
+    padding: 1rem 0 2rem;
+    margin-top: 2rem;    
+}
+
+.comment-form label{
+    display: block;
+}
+
+.comment-form input[type="submit"]{
+    background-color: #D2335B;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 0.8em;
+    display: inline-block;   
+}
+
+
+/* Search */
+.search .content-area .search-form{
+    margin: 0 0 1rem;
+}
+
+
+/* Comments */
+
+#comments ol,
+#comments ul{
+    list-style: none;
+    padding: 0;
+}
+
+#comments .depth-1{
+    padding: 2rem 0;
+}
+
+#comments .nav-links a{
+    padding: 0;
+}
+
+#comments .bypostauthor{
+    background-color: #bf95941a;
+}
+
+.entry-pings,
+.entry-comments {
+    color: #444;
+    padding: 20px 45px 40px 45px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+    border-left: 4px solid #444;
+}
+
+.entry-comments h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.comment-respond h3,
+.entry-pings h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.comment-respond {
+    margin: 1.5rem 0;
+}
+
+.comment-header {
+    color: #adaeb3;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.comment-header cite a {
+    border: none;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.comment-header .comment-meta a {
+    border: none;
+    color: #adaeb3;
+}
+
+li.comment {
+    background-color: #fff;
+    border-right: none;
+}
+
+.comment-content {
+    clear: both;
+    overflow: hidden;
+}
+
+.comment-list li {
+    font-size: 14px;
+    padding: 20px 30px 20px 25px;
+}
+
+.comment-list .children {
+    margin-top: 40px;
+    border: 1px solid #cccccc40;
+    margin-left: 1rem;
+}
+
+.comment-list li li {
+    background-color: #f5f5f6;
+}
+
+.comment-list li li li {
+    background-color: #fff;
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+    width: 50%;
+}
+
+.comment-respond label {
+    display: block;
+    margin-right: 12px;
+}
+
+.entry-comments .comment-author {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.entry-comments .comment-author img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    left: -80px;
+    top: -5px;
+    position: absolute;
+    width: 60px;
+}
+
+.entry-pings .reply {
+    display: none;
+}
+
+.bypostauthor {
+}
+
+.form-allowed-tags {
+    background-color: #f5f5f5;
+    font-size: 16px;
+    padding: 24px;
+}
+
+.comment-reply-link{
+    cursor: pointer;
+    background-color: #444;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 4px 10px 4px;
+    text-transform: uppercase;
+    width: auto;
+}
+
+.comment-reply-link:hover{
+    color: #fff;
+}
+
+.comment-notes{
+    display:none;   
+}
+
 
 
 /* General */
