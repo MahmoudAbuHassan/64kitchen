@@ -441,6 +441,28 @@ header .brand img{
     margin-top: 10px;      
 }
 
+/* Blog Section */
+.sixty4kitchen-blog img{
+    margin: 15px 0;
+}
+
+.sixty4kitchen-blog h3{
+    margin-bottom: 0;
+}
+
+.sixty4kitchen-blog h3 a{
+    color: #d83a65;  
+    font-weight: 700;      
+}
+
+.sixty4kitchen-blog .pub-date{
+    margin-bottom: 0.6rem;
+    display: block;
+}
+
+.sixty4kitchen-blog .excerpt{
+    color: #848484;
+}
 
 /* Footer - Footer Menu */
 .footer-menu ul, .footer-widgets ul{ 

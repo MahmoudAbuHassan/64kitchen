@@ -16,7 +16,7 @@ get_header();
 ?>
 		<div class="content-area">
 			<main>
-				<section class="lab-blog">
+				<section class="sixty4kitchen-blog">
 					<div class="container">
 						<div class="row">
 							<?php
@@ -26,9 +26,29 @@ get_header();
 									// Load posts loop
 									while( have_posts() ): the_post();
 										?>
-											<article>
-												<h2><?php the_title(); ?></h2>
-												<div><?php the_content(); ?></div>
+											<article <?php post_class(); ?> >
+												<a href="<? the_permalink();  ?>">
+													<h2><?php the_title(); ?></h2>
+												</a>
+												<div class="post-thumbnail">
+													<?php 
+													if( has_post_thumbnail() ):
+														the_post_thumbnail( 'sixty4kitchen-blog', array( 'class' => 'img-fluid') );
+													endif;
+													?>
+												</div>
+												<div class="meta">
+													<p>Published by <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?> 
+													<br />
+													<?php if( has_category() ): ?>
+														Categories: <span><?php the_category( ' ' ); ?></span>
+													<?php endif; ?>
+													<?php if( has_tag() ): ?>
+														Tags: <span><?php the_tags( '', ', ' ); ?></span>
+													<?php endif; ?>
+													</p>
+												</div>
+												<div><?php the_excerpt(); ?></div>
 											</article>
 										<?php
 									endwhile;
