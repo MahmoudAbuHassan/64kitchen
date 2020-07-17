@@ -403,6 +403,27 @@ function sixty4kitchen_customizer( $wp_customize ){
             )
         ); 
 
+    // Blog
+
+    //  Headline
+
+    $wp_customize->add_setting(
+        'set_blog_text', array(
+            'type'                  => 'theme_mod',
+            'default'               => '',
+            'sanitize_callback'     => 'sanitize_text_field'
+        )
+    );
+    
+    $wp_customize->add_control(
+        'set_blog_text', array(
+            'label'         => 'Set the headline for your blog section',
+            'description'   => 'blog',
+            'section'       => 'sec_home_page',
+            'type'          => 'text'
+        )
+    );
+
 }
 add_action( 'customize_register', 'sixty4kitchen_customizer' );
 

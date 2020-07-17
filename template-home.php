@@ -106,7 +106,7 @@ get_header(); ?>
 											<span class="regular">
 												<?php 
 												echo $currency;
-												echo $regular
+												echo $regular;
 												?>
 											</span>
 											<?php if( $showdeal == 1 && !empty( $deal ) && $sale != 0 ): ?>
@@ -127,6 +127,9 @@ get_header(); ?>
 				<?php endif; ?>
 				<section class="sixty4kitchen-blog">
 					<div class="container">
+					<div class="section-title">
+							<h2><?php echo get_theme_mod( 'set_blog_text', 'News From Our Blog' ); ?></h2>
+						</div>
 						<div class="row">
 							<?php
 
@@ -147,13 +150,12 @@ get_header(); ?>
 												<a href="<?php the_permalink(); ?>">
 													<?php 
 														if( has_post_thumbnail() ):
-															the_post_thumbnail( 'sixty4kitchen_blog', array( 'class' => 'img-fluid' ) );
+															the_post_thumbnail( 'sixty4kitchen-blog', array( 'class' => 'img-fluid' ) );
 														endif;
 													?>
 												</a>
 												<h3>
-													<a href="<? the_permalink(); ?>"></a>
-													<?php the_title(); ?>
+													<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 												</h3>
 												<div class="excerpt"><?php the_excerpt(); ?></div>
 											</article>
