@@ -39,7 +39,10 @@ get_header();
 						        <?php the_content(); ?>
 						    </div>
 						</article>						
-						<?php
+                        <?php
+                        if( comments_open() || get_comments_number() ):
+                            comments_template();
+                        endif;
                     endwhile;
                 ?>
             </div>
