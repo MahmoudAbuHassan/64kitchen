@@ -59,7 +59,7 @@ get_header(); ?>
 					?>
 					<div class="container">
 						<div class="section-title">
-						<h2><?php echo get_theme_mod( 'set_popular_text', 'Popular Products' ); ?></h2>
+						<h2><?php echo get_theme_mod( 'set_popular_text' ); ?></h2>
 						</div>
 						<?php echo do_shortcode( '[products limit=" ' . $popular_limit . ' " columns=" ' . $popular_col . ' " orderby="popularity"]') ?>
 					</div>
@@ -67,7 +67,7 @@ get_header(); ?>
 				<section class="new-arrivals">
 					<div class="container">
 						<div class="section-title">
-						<h2><?php echo get_theme_mod( 'set_new_arrivals_text', 'New Arrivals' ); ?></h2>
+						<h2><?php echo get_theme_mod( 'set_new_arrivals_text', __( 'New Arrivals','64kitchen' )  ); ?></h2>
 						</div>
 						<?php echo do_shortcode( '[products limit=" ' . $arrivals_limit . ' " columns=" ' . $arrivals_col . ' " orderby="date"]' ); ?>
 					</div>
@@ -82,53 +82,53 @@ get_header(); ?>
 
 				if( $showdeal == 1 && !empty( $deal ) && $sale != 0 ): 
 				?>
-					<section class="deal-of-the-week">
-						<div class="container">
-							<div class="section-title">
-							<h2><?php echo get_theme_mod( 'set_deal_text', 'Deal of the Week' ), $discount_percentage ?></h2>
+				<section class="deal-of-the-week">
+					<div class="container">
+						<div class="section-title">
+						<h2><?php echo get_theme_mod( 'set_deal_text', __( 'Deal of the Week','64kitchen' )  ), $discount_percentage ?></h2>
+						</div>
+						<div class="row d-flex align-items-center">
+							<div class="deal-img col-md-6 col-12 ml-auto text-center">
+								<?php echo get_the_post_thumbnail( $deal, 'large', array( 'class' => 'img-fluid' ) ); ?>
 							</div>
-							<div class="row d-flex align-items-center">
-								<div class="deal-img col-md-6 col-12 ml-auto text-center">
-									<?php echo get_the_post_thumbnail( $deal, 'large', array( 'class' => 'img-fluid' ) ); ?>
-								</div>
-								<div class="deal-desc col-md-4 col-12 mr-auto text-center">
-									<span class="discount">
-									<?php if ( $showdeal == 1 &&  !empty( $deal ) && $sale != 0 ): 
-										$discount_percentage = absint( 100-( ( $sale/$regular ) * 100 ) );
-										echo $discount_percentage . '% OFF' ?>
-									</span>
-									<?php endif; ?>
-									<h3>
-										<a href="<?php echo get_permalink( $deal ) ; ?>"><?php echo get_the_title( $deal ); ?></a>
-									</h3>
-										<p><?php echo get_the_excerpt( $deal ); ?></p>
-										<div class="prices">
-											<span class="regular">
-												<?php 
+							<div class="deal-desc col-md-4 col-12 mr-auto text-center">
+								<span class="discount">
+								<?php if ( $showdeal == 1 &&  !empty( $deal ) && $sale != 0 ): 
+									$discount_percentage = absint( 100-( ( $sale/$regular ) * 100 ) );
+									echo $discount_percentage . __('% OFF', '64kitchen') ?>
+								</span>
+								<?php endif; ?>
+								<h3>
+									<a href="<?php echo get_permalink( $deal ) ; ?>"><?php echo get_the_title( $deal ); ?></a>
+								</h3>
+									<p><?php echo get_the_excerpt( $deal ); ?></p>
+									<div class="prices">
+										<span class="regular">
+											<?php 
+											echo $currency;
+											echo $regular;
+											?>
+										</span>
+										<?php if( $showdeal == 1 && !empty( $deal ) && $sale != 0 ): ?>
+											<span class="sale">
+											<?php 
 												echo $currency;
-												echo $regular;
-												?>
+												echo $sale
+											?>
 											</span>
-											<?php if( $showdeal == 1 && !empty( $deal ) && $sale != 0 ): ?>
-												<span class="sale">
-												<?php 
-													echo $currency;
-													echo $sale
-												?>
-												</span>
-											<?php endif; ?>
-										</div>
-									<a href="<?php echo esc_url( '?add-to-cart=' .$deal ); ?>" class="add-to-cart">Add to Cart</a>
-								</div>
+										<?php endif; ?>
+									</div>
+								<a href="<?php echo esc_url( '?add-to-cart=' .$deal ); ?>" class="add-to-cart"><?php _e( 'Add to Cart','64kitchen' )  ?></a>
 							</div>
 						</div>
-					</section>
+					</div>
+				</section>
 				<?php endif; ?>
 				<?php endif; ?>
 				<section class="sixty4kitchen-blog">
 					<div class="container">
 					<div class="section-title">
-							<h2><?php echo get_theme_mod( 'set_blog_text', 'News From Our Blog' ); ?></h2>
+							<h2><?php echo get_theme_mod( 'set_blog_text', __('News From Our Blog', '64kitchen') ); ?></h2>
 						</div>
 						<div class="row">
 							<?php
@@ -164,7 +164,7 @@ get_header(); ?>
 									wp_reset_postdata();
 								else:	
 							?>
-								<p>Nothing to display.</p>
+								<p><?php _e( 'Nothing to display.','64kitchen' )  ?></p>
 							<?php endif; ?>
 						</div>
 					</div>
@@ -172,4 +172,3 @@ get_header(); ?>
 			</main>
 		</div>
 <?php get_footer(); ?>
-

@@ -9,8 +9,8 @@
 ?>
 
 <article <?php post_class(); ?> >
-<h2>
-<a href="<?php the_permalink();  ?>"> <?php the_title(); ?>
+	<h2>
+		<a href="<?php the_permalink();  ?>"> <?php the_title(); ?>
 	</h2>
 	</a>
 	<div class="post-thumbnail">
@@ -21,13 +21,13 @@
 		?>
 	</div>
 	<div class="meta">
-		<p>Published by <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?> 
+		<p> <?php _e('Published by','64kitchen') ?><?php the_author_posts_link(); ?> <?php _e('on','64kitchen') ?> <?php echo get_the_date(); ?> 
 		<br />
 		<?php if( has_category() ): ?>
-			Categories: <span><?php the_category( ' ' ); ?></span>
+			<?php _e('Categories:','64kitchen') ?> <span><?php the_category( ' ' ); ?></span>
 		<?php endif; ?>
 		<?php if( has_tag() ): ?>
-			Tags: <span><?php the_tags( '', ', ' ); ?></span>
+			<?php _e('Tags:','64kitchen') ?> <span><?php the_tags( '', ', ' ); ?></span>
 		<?php endif; ?>
 		</p>
 	</div>

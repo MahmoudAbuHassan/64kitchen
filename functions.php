@@ -45,10 +45,16 @@ add_action( 'wp_enqueue_scripts', 'sixty4kitchen_scripts' );
 * as indicating support for post thumbnails.
 */
 function sixty4kitchen_config(){
+
+    $textdomain = '64Kitchen';
+    load_theme_textdomain( $textdomain, get_stylesheet_directory() . '/languages/' );
+    load_theme_textdomain( $textdomain, get_template_directory() . '/languages/' );
+    
+
 	register_nav_menus(
 		array(
-            'sixty4kitchen_main_menu' 	=> '64 Kitchen Main Menu',
-            'sixty4kitchen_footer_menu' => '64 Kitchen Footer Menu',
+            'sixty4kitchen_main_menu' 	=> __('64 Kitchen Main Menu','64kitchen'),
+            'sixty4kitchen_footer_menu' => __('64 Kitchen Footer Menu','64kitchen'),
 		)
     );
     
@@ -115,45 +121,45 @@ function sixty4kitchen_woocommerce_header_add_to_cart_fragment( $fragments ) {
 add_action( 'widgets_init', 'sixty4kitchen_sidebars' );
 function sixty4kitchen_sidebars(){
     register_sidebar( array(
-        'name'          => '64 Kitchen Main Sidebar',
+        'name'          => __('64 Kitchen Main Sidebar','64kitchen'),
         'id'            => 'sixty4kitchen-sidebar-1',
-        'description'   => 'Drag and drop your widgets here',
+        'description'   => __('Drag and drop your widgets here','64kitchen'),
         'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
         'after_widget'  => '</div>',
         'before_title'  => '<h4 class="widget-title">',
         'after_title'   => '</h4>'
     ) );
     register_sidebar( array(
-        'name'          => 'Sidebar Shop',
+        'name'          => __('Sidebar Shop','64kitchen'),
         'id'            => 'sixty4kitchen-sidebar-shop',
-        'description'   => 'Drag and drop your WooCommerce widgets here',
+        'description'   => __('Drag and drop your WooCommerce widgets here','64kitchen'),
         'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
         'after_widget'  => '</div>',
         'before_title'  => '<h4 class="widget-title">',
         'after_title'   => '</h4>'
     ) );
     register_sidebar( array(
-        'name'          => 'Footer Sidebar 1',
+        'name'          => __('Footer Sidebar 1','64kitchen'),
         'id'            => 'sixty4kitchen-sidebar-footer1',
-        'description'   => 'Drag and drop your widgets here',
+        'description'   => __('Drag and drop your widgets here','64kitchen'),
         'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
         'after_widget'  => '</div>',
         'before_title'  => '<h4 class="widget-title">',
         'after_title'   => '</h4>'
     ) );
     register_sidebar( array(
-        'name'          => 'Footer Sidebar 2',
+        'name'          => __('Footer Sidebar 2','64kitchen'),
         'id'            => 'sixty4kitchen-sidebar-footer2',
-        'description'   => 'Drag and drop your widgets here',
+        'description'   => __('Drag and drop your widgets here','64kitchen'),
         'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
         'after_widget'  => '</div>',
         'before_title'  => '<h4 class="widget-title">',
         'after_title'   => '</h4>'
     ) );
     register_sidebar( array(
-        'name'          => 'Footer Sidebar 3',
+        'name'          => __('Footer Sidebar 3','64kitchen'),
         'id'            => 'sixty4kitchen-sidebar-footer3',
-        'description'   => 'Drag and drop your widgets here',
+        'description'   => __('Drag and drop your widgets here','64kitchen'),
         'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">',
         'after_widget'  => '</div>',
         'before_title'  => '<h4 class="widget-title">',

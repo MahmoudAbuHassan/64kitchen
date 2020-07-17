@@ -26,12 +26,12 @@ get_header();
 								get_template_part( 'template-parts/content' );
 							endwhile;
 							the_posts_pagination( array(
-								'prev_text'		=>	'Previous',
-								'next_text'		=>	'Next',
+								'prev_text'		=>	__('Previous', '64kitchen' ),
+								'next_text'		=>	__('Next', '64kitchen' ),
 							) );
 						else:
 						?>
-							<p>Nothing to display.</p>
+							<p><?php _e( 'Nothing to display', '64kitchen' ) ?></p>
 						<?php endif; ?>
 						</div>
 							<?php get_sidebar(); ?>

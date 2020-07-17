@@ -15,7 +15,7 @@ get_header();
 ?>
 		<div class="content-area">
 			<main>
-				<section class="lab-blog">
+				<section class="sixty4kitchen-blog">
 					<div class="container">
 						<div class="row">
 							<?php

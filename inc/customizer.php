@@ -9,8 +9,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
     $wp_customize->add_section(
         'sec_copyright', array(
-            'title'         => 'Copyright Settings',
-            'description'   => 'Copyright Section'
+            'title'         => __( 'Copyright Settings', '64kitchen' ),
+            'description'   => __( 'Copyright Section', '64kitchen' ),
         )
     );
 
@@ -25,8 +25,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
             $wp_customize->add_control(
                 'set_copyright', array(
-                    'label'         => 'Copyright',
-                    'description'   => 'Please, add your copyright information here',
+                    'label'         => __( 'Copyright','64kitchen' ),
+                    'description'   => __( 'Please, add your copyright information here','64kitchen' ),
                     'section'       => 'sec_copyright',
                     'type'          => 'text'
                 )
@@ -39,8 +39,8 @@ function sixty4kitchen_customizer( $wp_customize ){
     
     $wp_customize->add_section(
         'sec_slider', array(
-            'title'         => 'Slider Settings',
-            'description'   => 'Slider Section'
+            'title'         => __( 'Slider Settings', '64kitchen' ),
+            'description'   => __( 'Slider Section', '64kitchen' ),
         )
     );
 
@@ -56,8 +56,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
     $wp_customize->add_control(
         'set_slider_page1', array(
-            'label'         => 'Set slidier page 1',
-            'description'   => 'Set slidier page 1',
+            'label'         => __( 'Set slidier page 1', '64kitchen' ),
+            'description'   => __( 'Set slidier page 1', '64kitchen' ),
             'section'       => 'sec_slider',
             'type'          => 'dropdown-pages'
         )
@@ -75,8 +75,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
     $wp_customize->add_control(
         'set_slider_button_text1', array(
-            'label'         => 'Buttom Text for Page 1',
-            'description'   => 'Buttom Text for Page 1',
+            'label'         => __( 'Buttom Text for Page 1', '64kitchen' ),
+            'description'   => __( 'Buttom Text for Page 1', '64kitchen' ),
             'section'       => 'sec_slider',
             'type'          => 'text'
         )
@@ -94,8 +94,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
     $wp_customize->add_control(
         'set_slider_button_url1', array(
-            'label'         => 'URL for Page 1',
-            'description'   => 'URL for Page 1',
+            'label'         => __( 'URL for Page 1', '64kitchen' ),
+            'description'   => __( 'URL for Page 1', '64kitchen' ),
             'section'       => 'sec_slider',
             'type'          => 'url'
         )
@@ -113,8 +113,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
     $wp_customize->add_control(
         'set_slider_page2', array(
-            'label'         => 'Set slidier page 2',
-            'description'   => 'Set slidier page 2',
+            'label'         => __( 'Set slidier page 2', '64kitchen' ),
+            'description'   => __( 'Set slidier page 2', '64kitchen' ),
             'section'       => 'sec_slider',
             'type'          => 'dropdown-pages'
         )
@@ -132,8 +132,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
     $wp_customize->add_control(
         'set_slider_button_text2', array(
-            'label'         => 'Buttom Text for Page 2',
-            'description'   => 'Buttom Text for Page 2',
+            'label'         => __( 'Buttom Text for Page 2', '64kitchen' ),
+            'description'   => __( 'Buttom Text for Page 2', '64kitchen' ),
             'section'       => 'sec_slider',
             'type'          => 'text'
         )
@@ -151,8 +151,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
     $wp_customize->add_control(
         'set_slider_button_url2', array(
-            'label'         => 'URL for Page 2',
-            'description'   => 'URL for Page 2',
+            'label'         => __( 'URL for Page 2', '64kitchen' ),
+            'description'   => __( 'URL for Page 2', '64kitchen' ),
             'section'       => 'sec_slider',
             'type'          => 'url'
         )
@@ -171,8 +171,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
     $wp_customize->add_control(
         'set_slider_page3', array(
-            'label'         => 'Set slidier page 3',
-            'description'   => 'Set slidier page 3',
+            'label'         => __( 'Set slidier page 3', '64kitchen' ),
+            'description'   => __( 'Set slidier page 3', '64kitchen' ),
             'section'       => 'sec_slider',
             'type'          => 'dropdown-pages'
         )
@@ -190,8 +190,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
     $wp_customize->add_control(
         'set_slider_button_text3', array(
-            'label'         => 'Button Text for Page 3',
-            'description'   => 'Button Text for Page 3',
+            'label'         => __( 'Button Text for Page 3', '64kitchen' ),
+            'description'   => __( 'Button Text for Page 3', '64kitchen' ),
             'section'       => 'sec_slider',
             'type'          => 'text'
         )
@@ -209,8 +209,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
     $wp_customize->add_control(
         'set_slider_button_url3', array(
-            'label'         => 'URL for Page 3',
-            'description'   => 'URL for Page 3',
+            'label'         => __( 'URL for Page 3', '64kitchen' ),
+            'description'   => __( 'URL for Page 3', '64kitchen' ),
             'section'       => 'sec_slider',
             'type'          => 'url'
         )
@@ -222,8 +222,8 @@ function sixty4kitchen_customizer( $wp_customize ){
     
     $wp_customize->add_section(
         'sec_home_page', array(
-            'title'         => 'Home Page Products and Blog Settings',
-            'description'   => 'Home Page Section'
+            'title'         => __( 'Home Page Products and Blog Settings', '64kitchen' ),
+            'description'   => __( 'Home Page Section', '64kitchen' ),
         )
     );
 
@@ -241,8 +241,8 @@ function sixty4kitchen_customizer( $wp_customize ){
         
         $wp_customize->add_control(
             'set_popular_text', array(
-                'label'         => 'Set the headline',
-                'description'   => 'Sorted by popularity',
+                'label'         => __( 'Set the headline',  '64kitchen' ),
+                'description'   => __( 'Sorted by popularity',  '64kitchen' ),
                 'section'       => 'sec_home_page',
                 'type'          => 'text'
             )
@@ -260,8 +260,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
         $wp_customize->add_control(
             'set_popular_max_num', array(
-                'label'         => 'Popular Products Max Number',
-                'description'   => 'Popular Products Max Number',
+                'label'         => __( 'Popular Products Max Number', '64kitchen' ),
+                'description'   => __( 'Popular Products Max Number', '64kitchen' ),
                 'section'       => 'sec_home_page',
                 'type'          => 'number'
             )
@@ -279,8 +279,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
         $wp_customize->add_control(
             'set_popular_max_col', array(
-                'label'         => 'Popular Products Max Columns',
-                'description'   => 'Popular Products Max Columns',
+                'label'         => __( 'Popular Products Max Columns', '64kitchen' ),
+                'description'   => __( 'Popular Products Max Columns', '64kitchen' ),
                 'section'       => 'sec_home_page',
                 'type'          => 'number'
             )
@@ -300,8 +300,8 @@ function sixty4kitchen_customizer( $wp_customize ){
         
         $wp_customize->add_control(
             'set_new_arrivals_text', array(
-                'label'         => 'Set the headline',
-                'description'   => 'Sorted by newest date',
+                'label'         => __( 'Set the headline', '64kitchen' ),
+                'description'   => __( 'Sorted by newest date', '64kitchen' ),
                 'section'       => 'sec_home_page',
                 'type'          => 'text'
             )
@@ -319,8 +319,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
         $wp_customize->add_control(
             'set_new_arrivals_max_num', array(
-                'label'         => 'New Arrivals Max Number',
-                'description'   => 'New Arrivals Max Number',
+                'label'         => __( 'New Arrivals Max Number', '64kitchen' ),
+                'description'   => __( 'New Arrivals Max Number', '64kitchen' ),
                 'section'       => 'sec_home_page',
                 'type'          => 'number'
             )
@@ -338,8 +338,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
         $wp_customize->add_control(
             'set_new_arrivals_max_col', array(
-                'label'         => 'New Arrivals Max Columns',
-                'description'   => 'New Arrivals Max Columns',
+                'label'         => __( 'New Arrivals Max Columns', '64kitchen' ),
+                'description'   => __( 'New Arrivals Max Columns', '64kitchen' ),
                 'section'       => 'sec_home_page',
                 'type'          => 'number'
             )
@@ -359,8 +359,8 @@ function sixty4kitchen_customizer( $wp_customize ){
         
         $wp_customize->add_control(
             'set_deal_text', array(
-                'label'         => 'Set the headline for your deal',
-                'description'   => 'deal',
+                'label'         => __( 'Set the headline for your deal', '64kitchen' ),
+                'description'   => __( 'deal', '64kitchen' ),
                 'section'       => 'sec_home_page',
                 'type'          => 'text'
             )
@@ -378,7 +378,7 @@ function sixty4kitchen_customizer( $wp_customize ){
 
         $wp_customize->add_control(
             'set_deal_show', array(
-                'label'         => 'Show Deal of the Week?',
+                'label'         => __( 'Show Deal of the Week?', '64kitchen' ),
                 'section'       => 'sec_home_page',
                 'type'          => 'checkbox'
             )
@@ -396,8 +396,8 @@ function sixty4kitchen_customizer( $wp_customize ){
 
         $wp_customize->add_control(
             'set_deal', array(
-                'label'         => 'Deal of the Week Product ID',
-                'description'   => 'Product ID to Display',
+                'label'         => __( 'Deal of the Week Product ID', '64kitchen' ),
+                'description'   => __( 'Product ID to Display', '64kitchen' ),
                 'section'       => 'sec_home_page',
                 'type'          => 'number'
             )
@@ -417,8 +417,8 @@ function sixty4kitchen_customizer( $wp_customize ){
     
     $wp_customize->add_control(
         'set_blog_text', array(
-            'label'         => 'Set the headline for your blog section',
-            'description'   => 'blog',
+            'label'         => __( 'Set the headline for your blog section', '64kitchen' ),
+            'description'   => __( 'blog', '64kitchen' ),
             'section'       => 'sec_home_page',
             'type'          => 'text'
         )
