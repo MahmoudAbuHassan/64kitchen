@@ -77,3 +77,9 @@ function remove_subtotal_from_orders_total_lines( $totals ) {
     unset($totals['cart_subtotal']  );
     return $totals;
 }
+
+add_filter( 'woocommerce_min_password_strength', 'reduce_min_strength_password_requirement' );
+function reduce_min_strength_password_requirement( $strength ) {
+    // 3 => Strong (default) | 2 => Medium | 1 => Weak | 0 => Very Weak (anything).
+    return 0; 
+}
