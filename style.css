@@ -601,6 +601,7 @@ header .brand img{
 
 .woocommerce ul.products li.product .price ins {
     font-size: 140%;
+    text-decoration: none;
 }
 
 .woocommerce ul.products li.product .onsale{
