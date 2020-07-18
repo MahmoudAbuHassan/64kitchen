@@ -12,15 +12,15 @@
     <header>
         <h1><?php the_title(); ?></h1>
         <div class="meta">
-            <p> <?php _e('Published by','64kitchen') ?><?php the_author_posts_link(); ?> <?php _e('on','64kitchen') ?> <?php echo get_the_date(); ?> <br />
-            <?php if( has_category() ): ?>
-                <?php _e('Categories:','64kitchen') ?> <span><?php the_category( ' ' ); ?></span>
-            <?php endif; ?>
-            <br/>
-            <?php if(has_tag()): ?>
-                <?php _e('Tags:','64kitchen') ?> <span><?php the_tags( '', ', ' ); ?></span>
-            <?php endif; ?>
-            </p>                            
+	        <p> <?php esc_html_e('Published by','64kitchen') ?><?php the_author_posts_link(); ?> <?php esc_html_e('on','64kitchen') ?> <?php echo esc_html( get_the_date() ); ?> 
+	        <br />
+	        <?php if( has_category() ): ?>
+	        	<?php esc_html_e('Categories:','64kitchen') ?> <span><?php the_category( ' ' ); ?></span>
+	        <?php endif; ?>
+	        <?php if( has_tag() ): ?>
+	        	<?php esc_html_e('Tags:','64kitchen') ?> <span><?php the_tags( '', ', ' ); ?></span>
+	        <?php endif; ?>
+	        </p>                            
         </div>        
         <div class="post-thumbnail">
             <?php 
@@ -33,7 +33,7 @@
     <div class="content">
         <?php wp_link_pages(
             array(
-                'before'    =>  '<p class="inner-pagination">' . __('Pages','64kitchen'),
+                'before'    =>  '<p class="inner-pagination">' . esc_html__('Pages','64kitchen'),
                 'after'     =>  '</p>',
             )
         ); ?>

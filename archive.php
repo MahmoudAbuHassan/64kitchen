@@ -23,8 +23,8 @@ get_header();
                                 		get_template_part( 'template-parts/content', 'archive' );
 									endwhile;
 									the_posts_pagination( array(
-										'prev_text'		=>	__('Previous', '64kitchen'),
-										'next_text'		=>	__('Next', '64kitchen'),
+										'prev_text'		=>	esc_html__('Previous', '64kitchen'),
+										'next_text'		=>	esc_html__('Next', '64kitchen'),
 									) );
 								else:						
 							?>

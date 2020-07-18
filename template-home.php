@@ -36,7 +36,7 @@ get_header(); ?>
 									</div>
 									<div class="slider-description">
 										<div class="subtitle"><?php the_content(); ?></div>
-										<a class="link" href="<?php echo $slider_button_url[$j]; ?>"><?php echo $slider_button_text[$j]; ?></a>
+										<a class="link" href="<?php echo esc_url( $slider_button_url[$j] ); ?>"><?php echo esc_html( $slider_button_text[$j] ); ?></a>
 									</div>
 								</div>
 							</div>
