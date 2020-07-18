@@ -680,6 +680,7 @@ header .brand img{
     color: #000;
     font-size: 20px;
     font-weight: 500;
+    
 }
 
 .woocommerce div.product p.price ins, 
@@ -688,6 +689,7 @@ header .brand img{
     font-size: 25px;
     color: #000;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .woocommerce span.onsale{
