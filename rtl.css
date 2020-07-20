@@ -16,16 +16,6 @@ body {
 
 /* Header - Main Menu */
 
-header .search{
-    padding: 0.7rem 0;
-    background-color: #0000000a;
-}
-
-header .top-bar{
-    padding: 0.2rem 0 0 0;
-    background: white;
-}
-
 header p.site-title{
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -85,6 +75,7 @@ header .brand img{
 }
 
 .main-menu ul li a.nav-link:first-child{ 
+    display: flex;
     padding-right: 0 !important;
 }
 
@@ -123,7 +114,7 @@ header .brand img{
 
 .main-menu .navbar-toggler{
     border: none;
-    padding-left: 0;    
+    padding-right: 0;    
 }
 
 .main-menu .dropdown-toggle::after {
@@ -159,26 +150,6 @@ header .brand img{
 .main-menu .dropdown-menu .dropdown-menu { 
     top: -1px;
     right: 100%;
-}
-
-
-/* Search Form */
-.search-form button{
-    background-image: url('img/search.svg');
-    height: 23px;
-    width: 23px;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    border: none;
-}
-
-.search-form input[type="search"]{
-    background-color: #fff;
-    border: none;
-    font-weight: 500;
-    font-size: 110%;
-    padding: 0.3rem 1rem;
-    margin-left: 0.3rem;
 }
 
 /* Cart */
@@ -304,11 +275,14 @@ header .brand img{
 
 .home .popular-products .woocommerce ul.products li.product .button,
 .home .new-arrivals .woocommerce ul.products li.product .button {
-    background-color: transparent;
-    color: #d83a65;
-    padding: 0;
-    margin: 0;
-    transition: 0.5s;
+    background-color: #D2335B;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1;
+    padding: 0.618em 1em;
+    font-weight: 700;
+    border-radius: 3px;
+    display: inline-block;
 }
 
 .home .popular-products .woocommerce ul.products li.product .button:hover,
@@ -456,8 +430,8 @@ header .brand img{
 }
 
 .shop-content .row{
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
 .post-type-archive-product .content-area, 
@@ -601,6 +575,7 @@ header .brand img{
 .woocommerce-Price-amount {
     font-size: 25px;
     color: #000;
+    font-family: sea;
     font-weight: 700;
 }
 
@@ -614,6 +589,7 @@ header .brand img{
     background-color: #D2335B;
     margin: 0;
     font-weight: 400;
+    direction: rtl !important;
 }
 
 .woocommerce span.onsale:before {
@@ -638,6 +614,10 @@ header .brand img{
     border-style: solid;
     border-width: 0 0 23px 22px;
     border-color: transparent transparent #D2335B transparent;
+}
+
+.shop-content{
+    direction: ltr;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs{
@@ -1099,7 +1079,7 @@ p, ul li a, .nav-links a, .nav-links span{
     }
 
     .home .popular-products .woocommerce ul.products li.product .button, .home .new-arrivals .woocommerce ul.products li.product .button {
-        display: flex;
+        display: table;
     }
     
     /* Deal of the week */

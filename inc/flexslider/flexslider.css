@@ -100,6 +100,7 @@ html[xmlns] .flexslider .slides {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+  direction: ltr !important;
 }
 .loading .flex-viewport {
   max-height: 300px;
