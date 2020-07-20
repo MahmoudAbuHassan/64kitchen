@@ -89,7 +89,8 @@ get_header(); ?>
 						</div>
 						<div class="row deal-of-the-week-img-desc">
 							<div class="deal-img col-md-6 col-12 text-center">
-								<?php echo get_the_post_thumbnail( $deal, 'large', array( 'class' => 'img-fluid' ) ); ?>
+							<a href="<?php echo esc_url( get_permalink( $deal ) ); ?>">
+								<?php echo get_the_post_thumbnail( $deal, 'large', array( 'class' => 'img-fluid' ) ); ?></a>
 							</div>
 							<div class="deal-desc col-md-4 col-12 text-center">
 								<span class="discount">

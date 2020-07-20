@@ -15,6 +15,7 @@ Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, the
 
 body{
     font-family: 'Rajdhani', sans-serif;
+    background: #835b3233;
 }
 
 .content-area{
@@ -29,19 +30,10 @@ body{
 /* Home Page Template */
 
 /* Header - Main Menu */
-body #page > header{
-    border-top: 4px solid #FFEB33;
-    background-color: #fdfdfd;
-    border-bottom: 1px solid #eee;    
-}
-
-header .search{
-    padding: 0.7rem 0;
-    background-color: #0000000a;
-}
 
 header .top-bar{
-    padding: 1rem 0 0 0;
+    padding: 0.2rem 0 0 0;
+    background: white;
 }
 
 header p.site-title{
@@ -57,7 +49,6 @@ header p.site-title~span {
 }
 
 header .brand{
-    padding-bottom: 15px;
     word-break: break-word;
     -ms-word-wrap: break-word;
 }
@@ -100,7 +91,7 @@ header .brand img{
 .navbar-light .navbar-nav .nav-link{  
     color: #303030; 
     text-decoration: none;
-    padding: 7px 15px 20px;
+    padding: 4px 15px 3px;
 }
 
 .main-menu ul li a.nav-link:first-child{ 
@@ -293,23 +284,11 @@ header .brand img{
     margin-bottom: 20px;
 }
 
-.home main .section-title::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    height: 1px;
-    width: 100%;
-    background: #ddd;
-}
-
 .home main .section-title h2{
     font-family: 'Seaweed Script';
-    font-size: 3rem;    
+    font-size: 3.5rem;    
     position: relative;
     display: inline-block;
-    background: #fff;
     vertical-align: top;
     padding: 0 20px 0 0;
     margin: 0;    
@@ -324,9 +303,9 @@ header .brand img{
 }
 
 .home .woocommerce ul.products li.product .woocommerce-loop-product__title {
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #868686;
+    font-family: 'Seaweed Script';
+    font-size: 1.8rem;
+    font-weight: 600;
     margin: 0;
     padding: 0;
     display: table;    
@@ -334,11 +313,15 @@ header .brand img{
 
 .home .popular-products .woocommerce ul.products li.product .button,
 .home .new-arrivals .woocommerce ul.products li.product .button {
-    background-color: transparent;
-    color: #d83a65;
-    padding: 0;
-    margin: 0;
-    transition: 0.5s;
+    background-color: #D2335B;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1;
+    padding: 0.618em 1em;
+    font-weight: 700;
+    border-radius: 3px;
+    display: inline-block;
+}
 }
 
 .home .popular-products .woocommerce ul.products li.product .button:hover,
@@ -393,7 +376,7 @@ header .brand img{
 }
 
 .deal-of-the-week h2{
-    background: #f8f8f8 !important;   
+    font-size: 4rem !important;
 }
 
 .deal-of-the-week h3{
@@ -402,7 +385,8 @@ header .brand img{
 }
 
 .deal-of-the-week h3 a{
-    font-size: 2rem;
+    font-family: 'Seaweed Script';
+    font-size: 2.5rem;
     font-weight: 700;
     color: #000;  
     transition: 0.5s;  
@@ -413,14 +397,13 @@ header .brand img{
 }
 
 .deal-of-the-week p{
-    color: #aeaeae;
     font-size: 1.2rem;    
 }
 
 .deal-of-the-week .prices .regular{
     font-size: 1.4rem;
     font-weight: 600;
-    opacity: 0.4;
+    opacity: 0.5;
     text-decoration: line-through;    
 }
 
@@ -1660,4 +1643,17 @@ p, ul li a, .nav-links a, .nav-links span{
 
 .deal-desc {
     margin-right: auto;
+}
+
+
+
+.asd{
+    background-color: #D2335B;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1;
+    padding: 0.618em 1em;
+    font-weight: 700;
+    border-radius: 3px;
+    display: inline-block;
 }
