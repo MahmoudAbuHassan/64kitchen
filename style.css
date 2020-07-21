@@ -1649,3 +1649,7 @@ p, ul li a, .nav-links a, .nav-links span{
 .woocommerce div.product .woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n+1){
     clear: none;
 }
+
+.flexslider{
+    direction: ltr !important;
+}
