@@ -116,6 +116,8 @@ body {
 
 .woocommerce ul.products li.product .onsale{
     transform: rotate(-90deg);
+    left: auto;
+    right: 0;
 }
 
 .woocommerce ul.products li.product .onsale:before {

@@ -570,7 +570,7 @@ header .brand img{
 .woocommerce ul.products li.product .onsale{
     top: 16px;
     left: 0;
-    right: 0;
+    right: auto;
     transform: rotate(90deg);
     border-radius: 0;   
     width: 83px;
