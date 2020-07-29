@@ -63,7 +63,7 @@ header .brand img{
 }
 
 .account ul li a{
-    padding: 0 1rem 0 0 !important;
+    padding: 23px 1rem 0 0 !important;
 }
 
 .main-menu{
@@ -95,7 +95,7 @@ header .brand img{
 }
 
 .main-menu ul li a.nav-link:first-child{ 
-    padding-left: 0 !important;
+    padding: 10px 15px 3px 0px;
 }
 
 .main-menu ul li ul{
