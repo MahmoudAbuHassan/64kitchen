@@ -29,14 +29,14 @@ get_header(); ?>
 								$slider_loop->the_post();
 						?>
 						<li>
-							<?php the_post_thumbnail( 'sixty4kitchen-slider', array( 'class' => 'img-fluid' ) ); ?>
-							<div class="container">
-								<div class="slider-details-container">
+							<?php the_post_thumbnail( 'sixty4kitchen-slider', array( 'class' => '' ) ); ?>
+							<div class="row justify-content-center">
+								<div class="slider-details-container d-inline">
 									<div class="slider-title">
 										<h1><?php the_title(); ?></h1>
 									</div>
+									<div class="subtitle"><?php the_content(); ?></div>
 									<div class="slider-description">
-										<div class="subtitle"><?php the_content(); ?></div>
 										<a class="link" href="<?php echo esc_url( $slider_button_url[$j] ); ?>"><?php echo esc_html( $slider_button_text[$j] ); ?></a>
 									</div>
 								</div>
