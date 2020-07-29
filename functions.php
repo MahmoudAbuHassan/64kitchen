@@ -82,7 +82,7 @@ function sixty4kitchen_config(){
     ) );
 
     add_theme_support( 'post-thumbnails' );
-    add_image_size( 'sixty4kitchen-slider', 1920, 800, array( 'center', 'center' ) );
+    add_image_size( 'sixty4kitchen-slider', 1981, 801, array( 'center', 'center' ) );
     add_image_size( 'sixty4kitchen-blog', 960, 640, array( 'center', 'center' ) );
 
     if ( ! isset( $content_width ) ) {
