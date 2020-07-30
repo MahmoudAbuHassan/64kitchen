@@ -24,8 +24,6 @@ function sixty4kitchen_wc_modify(){
     add_action( 'woocommerce_before_main_content', 'sixty4kitchen_add_shop_tags', 9 );
     function sixty4kitchen_add_shop_tags(){
         if( is_shop() ){
-            echo '<div class="col-lg-9 col-md-8 order-1 order-md-2">';
-        }else{
             echo '<div class="col">';
         }
     }
