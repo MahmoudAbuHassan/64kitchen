@@ -290,7 +290,7 @@ header .brand img{
 
 .home .woocommerce ul.products li.product .woocommerce-loop-product__title {
     font-family: 'Seaweed Script';
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     font-weight: 600;
     margin: 0;
     padding: 0;
@@ -307,7 +307,10 @@ header .brand img{
     font-weight: 700;
     border-radius: 3px;
     display: inline-block;
+    text-align: -webkit-auto;
 }
+
+
 
 .home .popular-products .woocommerce ul.products li.product .button:hover,
 .home .new-arrivals .woocommerce ul.products li.product .button:hover {

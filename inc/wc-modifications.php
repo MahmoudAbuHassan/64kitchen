@@ -83,3 +83,8 @@ function reduce_min_strength_password_requirement( $strength ) {
     // 3 => Strong (default) | 2 => Medium | 1 => Weak | 0 => Very Weak (anything).
     return 0; 
 }
+
+/**
+ * Remove related products output
+ */
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
