@@ -220,9 +220,7 @@ header .brand img{
 
 .slider-details-container .subtitle{
     font-size: 1.3em;
-    margin-bottom: 15px;
-    display: 
-    justify-content: center;       
+    margin-bottom: 15px;       
 }
 
 .slider-details-container .slider-title{
@@ -642,6 +640,9 @@ li#tab-title-description{
     padding: 12px;
 }
 
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+    display: table;
+}
 
 /* Single Product */
 .woocommerce #respond input#submit.alt, 
@@ -1011,9 +1012,6 @@ li.comment {
 
 .entry-pings .reply {
     display: none;
-}
-
-.bypostauthor {
 }
 
 .form-allowed-tags {
