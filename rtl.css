@@ -58,12 +58,6 @@ body {
 
 /* slider */
 
-.content-area h1, .content-area h2, .content-area h3, .content-area h4, .content-area h5, .content-area h6, .content-area p{
-    display: block;
-}
-
-
-
 /* Frontend Product Lists */
 .home main .section-title{
     margin-bottom: 20px;
