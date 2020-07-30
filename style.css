@@ -310,7 +310,25 @@ header .brand img{
     text-align: -webkit-auto;
 }
 
+.woocommerce div.product .product_title{
+    display: flex;
+}
 
+p.price{
+    display: flex;
+}
+
+.content-area p{
+    display: flex;
+}
+
+span.posted_in{
+    display: flex !important;
+}
+
+li#tab-title-description{
+    display: table;
+}
 
 .home .popular-products .woocommerce ul.products li.product .button:hover,
 .home .new-arrivals .woocommerce ul.products li.product .button:hover {
@@ -1263,6 +1281,7 @@ li.comment {
 .content-area p{
     -ms-word-wrap: break-word;
     word-wrap: break-word;
+    display: flex;
 }
 
 .content-area .sticky{
