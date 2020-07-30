@@ -1286,13 +1286,6 @@ li.comment {
     display: flex;
 }
 
-.content-area h3{
-    justify-content: center;
-}
-.content-area p {
-    justify-content: center;
-}
-
 .content-area .sticky{
     background-color: #fbed350d;
     padding: 2rem;

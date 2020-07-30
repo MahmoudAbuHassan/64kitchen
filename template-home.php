@@ -106,10 +106,10 @@ get_header(); ?>
 									echo esc_html( $discount_percentage . esc_html__('% OFF', '64kitchen') ); ?>
 								</span>
 								<?php endif; ?>
-								<h3>
+								<h3 class="justify-content-center">
 									<a href="<?php echo esc_url( get_permalink( $deal ) ); ?>"><?php echo esc_html( get_the_title( $deal ) ) ; ?></a>
 								</h3>
-									<p><?php echo esc_html( get_the_excerpt( $deal ) ); ?></p>
+									<p class="justify-content-center"><?php echo esc_html( get_the_excerpt( $deal ) ); ?></p>
 									<div class="prices">
 										<span class="regular">
 											<?php 
