@@ -221,7 +221,7 @@ header .brand img{
 .slider-details-container .subtitle{
     font-size: 1.3em;
     margin-bottom: 15px;
-    display: flex; 
+    display: 
     justify-content: center;       
 }
 
@@ -1284,6 +1284,13 @@ li.comment {
     -ms-word-wrap: break-word;
     word-wrap: break-word;
     display: flex;
+}
+
+.content-area h3{
+    justify-content: center;
+}
+.content-area p {
+    justify-content: center;
 }
 
 .content-area .sticky{
