@@ -12,14 +12,7 @@ function sixty4kitchen_wc_modify(){
         echo '<div class="container shop-content"><div class="row">';
     }
 
-    if( is_shop() ){
-        add_action( 'woocommerce_before_main_content', 'sixty4kitchen_add_sidebar_tags', 6 );
-        function sixty4kitchen_add_sidebar_tags(){
-            echo '<div class="sidebar-shop col-lg-3 col-md-4 order-2 order-md-1">';
-        }
-    
-        add_action( 'woocommerce_before_main_content', 'woocommerce_get_sidebar', 7 );
-    
+    if( is_shop() ){    
         add_action( 'woocommerce_before_main_content', 'sixty4kitchen_close_sidebar_tags', 8 );
         function sixty4kitchen_close_sidebar_tags(){
             echo '</div>';
