@@ -63,7 +63,7 @@ header .brand img{
 }
 
 .account ul li a{
-    padding: 0 1rem 0 0 !important;
+    padding: 23px 1rem 0 0 !important;
 }
 
 .main-menu{
@@ -95,7 +95,7 @@ header .brand img{
 }
 
 .main-menu ul li a.nav-link:first-child{ 
-    padding-left: 0 !important;
+    padding: 10px 15px 3px 0px;
 }
 
 .main-menu ul li ul{
@@ -207,7 +207,7 @@ header .brand img{
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
-    width: 800px;
+    text-align: center;
  }
 
 .slider-details-container h1{
@@ -226,9 +226,10 @@ header .brand img{
 }
 
 .slider-details-container a{
-    background-color: #D2335B;
-    color: #fff;
+    background-color: rgb(240,145,99);
+    color: black;
     border-radius: 5px;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 0.8em;
     display: inline-block;
@@ -236,9 +237,10 @@ header .brand img{
 }
 
 .slider-details-container a:hover{
-    color: #fff;
+    background: darkred;
+    color: white;
 }
-
+ 
 .flexslider .slides {
     padding: 0 !important;
 }
@@ -1585,7 +1587,7 @@ p, ul li a, .nav-links a, .nav-links span{
 
 }
 
-@media all and (max-width: 575px)  {
+@media all and (max-width: 768px)  {
     .slider-details-container{
         max-width: 300px;        
     }
@@ -1596,9 +1598,7 @@ p, ul li a, .nav-links a, .nav-links span{
     }
 
     .flexslider img{
-        height: 500px !important;
-        object-fit: cover;
-        object-position: center;
+        height: 300px !important;
     }
 }
 

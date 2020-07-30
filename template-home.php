@@ -6,6 +6,7 @@ Template Name: Home Page
 get_header(); ?>
 		<div class="content-area">
 			<main>
+				<!-- Slider -->
 				<section class="slider">
 					<div class="flexslider">
 						<ul class="slides">
@@ -28,14 +29,14 @@ get_header(); ?>
 								$slider_loop->the_post();
 						?>
 						<li>
-							<?php the_post_thumbnail( 'sixty4kitchen-slider', array( 'class' => 'img-fluid' ) ); ?>
-							<div class="container">
-								<div class="slider-details-container">
+							<?php the_post_thumbnail( 'sixty4kitchen-slider', array( 'class' => '' ) ); ?>
+							<div class="row justify-content-center">
+								<div class="slider-details-container d-inline">
 									<div class="slider-title">
 										<h1><?php the_title(); ?></h1>
 									</div>
+									<div class="subtitle"><?php the_content(); ?></div>
 									<div class="slider-description">
-										<div class="subtitle"><?php the_content(); ?></div>
 										<a class="link" href="<?php echo esc_url( $slider_button_url[$j] ); ?>"><?php echo esc_html( $slider_button_text[$j] ); ?></a>
 									</div>
 								</div>
@@ -49,7 +50,9 @@ get_header(); ?>
 						?>
 						</ul>
 					</div>
-				</section>
+				</section><!-- End of Slider -->
+
+				<!-- Popular Products -->
 				<section class="popular-products">
 					<?php 
 					 $popular_limit = get_theme_mod( 'set_popular_max_num', 4 );
@@ -63,7 +66,9 @@ get_header(); ?>
 						</div>
 						<?php echo do_shortcode( '[products limit=" ' . esc_attr( $popular_limit ) . ' " columns=" ' . esc_attr( $popular_col ) . ' " orderby="popularity"]') ?>
 					</div>
-				</section>
+				</section><!-- End of popular products -->
+
+				<!-- New Arrivals -->
 				<section class="new-arrivals">
 					<div class="container">
 						<div class="section-title">
@@ -72,7 +77,9 @@ get_header(); ?>
 						<?php echo do_shortcode( '[products limit=" ' . esc_attr( $arrivals_limit ) . ' " columns=" ' . esc_attr( $arrivals_col ) . ' " orderby="date"]' ); ?>
 					</div>
 					<?php if ( class_exists( 'WooCommerce' ) ): ?>
-				</section>
+				</section><!-- End of New Arrivals -->
+
+				<!-- Deal of the week -->
 				<section class="deal-of-the-week">
 					<?php 		
 					$showdeal			= get_theme_mod( 'set_deal_show', 0 );
@@ -125,7 +132,9 @@ get_header(); ?>
 					</div>
 				</section>
 				<?php endif; ?>
-				<?php endif; ?>
+				<?php endif; ?><!-- End of Deal of the Week -->
+				
+				<!-- Blog -->
 				<section class="sixty4kitchen-blog">
 					<div class="container">
 					<div class="section-title">
@@ -169,7 +178,7 @@ get_header(); ?>
 							<?php endif; ?>
 						</div>
 					</div>
-				</section>
+				</section><!-- End of Blog -->
 			</main>
 		</div>
 <?php get_footer(); ?>

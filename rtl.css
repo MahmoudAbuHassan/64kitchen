@@ -9,19 +9,14 @@ body {
 
 /* Header - Main Menu */
 
-
-
 .account ul li a{
     padding: 0 0 0 1rem !important;
 }
 
 
 .main-menu ul li{ 
- 
     margin: 0 0 0 5px;
 }
-
-
 
 .main-menu ul li a.nav-link:first-child{ 
     display: flex;
@@ -30,7 +25,6 @@ body {
 
 
 .main-menu .navbar-toggler{
-
     padding-right: 0;    
 }
 
@@ -50,10 +44,6 @@ body {
     -o-transform: rotate(90deg);
 }
 
-.main-menu .dropdown-menu li { 
-
-}
-
 .main-menu .dropdown-menu .dropdown-menu { 
 
     right: 100%;
@@ -69,20 +59,15 @@ body {
     font-size: 3.5em;    
     display: flex;
     padding: 0 0 0 20px;
-
-    justify-content: end;   
+    justify-content: start;   
 }
 
 .deal-of-the-week .discount:before{
-
     right: 0;
- 
 }
 
 .deal-of-the-week .discount:after{
-
     right: 0;
-  
 }
 
 .deal-of-the-week h2{

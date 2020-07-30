@@ -22,8 +22,8 @@ function sixty4kitchen_scripts(){
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/inc/bootstrap.min.js', array( 'jquery' ), '4.5.0', true );
     wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/inc/bootstrap.min.css', array(), '4.5.0', 'all');
 
-    // Theme's main stylesheet (change before deployment)
-    wp_enqueue_style( 'sixty4kitchen-style', get_stylesheet_uri(), array(), filemtime( get_template_directory() . '/style.css' ), 'all' ); //change before deployment
+    // Theme's main stylesheet
+    wp_enqueue_style( 'sixty4kitchen-style', get_stylesheet_uri(), array(), 'all');
 
     // Google Fonts
     wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Seaweed+Script&display=swap' );
@@ -75,14 +75,14 @@ function sixty4kitchen_config(){
     add_theme_support( 'wc-product-gallery-lightbox' );
     add_theme_support( 'wc-product-gallery-slider' );
     add_theme_support( 'custom-logo', array(
-        'height'        => 85,
-        'width'         => 160,
+        'height'        => 120,
+        'width'         => 120,
         'flex_height'   => true,
         'flex_width'    => true
     ) );
 
     add_theme_support( 'post-thumbnails' );
-    add_image_size( 'sixty4kitchen-slider', 1920, 800, array( 'center', 'center' ) );
+    add_image_size( 'sixty4kitchen-slider', 1981, 801, array( 'center', 'center' ) );
     add_image_size( 'sixty4kitchen-blog', 960, 640, array( 'center', 'center' ) );
 
     if ( ! isset( $content_width ) ) {

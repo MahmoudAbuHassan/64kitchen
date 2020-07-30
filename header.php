@@ -41,14 +41,17 @@
 										<ul class="navbar-nav float-left">
 											<?php if( is_user_logged_in() ) : ?>
 												<li>
-													<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link"><?php esc_html_e( 'My Account', '64kitchen' ) ?></a>
+													<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link"><?php esc_html_e( 'حسابي', '64kitchen' ) ?></a>
+													<!-- esc_html_e( 'My Account', '64kitchen' ) -->
 												</li>
 												<li>
-													<a href="<?php echo esc_url( wp_logout_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ) ?>" class="nav-link"><?php esc_html_e( 'Logout', '64kitchen' ) ?></a>
+													<a href="<?php echo esc_url( wp_logout_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ) ?>" class="nav-link"><?php esc_html_e( 'تسجيل خروج', '64kitchen' ) ?></a>
+													<!-- esc_html_e( 'Logout', '64kitchen' ) -->
 												</li>
 											<?php else: ?>
 												<li>
-												<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link"><?php esc_html_e( 'Login / Register', '64kitchen' ) ?></a>
+												<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link"><?php esc_html_e( 'تسجيل الدخول', '64kitchen' ) ?></a>
+												<!-- esc_html_e( 'Login / Register', '64kitchen' ) -->
 												</li>
 											<?php endif; ?>
 										</ul>
