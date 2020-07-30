@@ -36,7 +36,7 @@
 						<div class="second-column col-md-9 col-12 col-lg-10">
 							<div class="row">
 								<?php if( class_exists( 'WooCommerce' ) ): ?>
-								<div class="account col-12">
+								<div class="account col-12 d-flex">
 									<div class="navbar-expand">
 										<ul class="navbar-nav float-left">
 											<?php if( is_user_logged_in() ) : ?>

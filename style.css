@@ -63,7 +63,7 @@ header .brand img{
 }
 
 .account ul li a{
-    padding: 23px 1rem 0 0 !important;
+    padding: 0 1rem 0 0 !important;
 }
 
 .main-menu{
@@ -171,6 +171,10 @@ header .brand img{
     left: 100%;
 }
 
+.account.col-12.d-flex {
+    padding-top: 23px;
+    justify-content: space-between;
+}
 
 /* Cart */
 .cart .cart-icon{
@@ -191,7 +195,6 @@ header .brand img{
     display: inline-block;
     text-align: center;
 }
-
 
 /* Flex Slider */
 .flexslider{
@@ -1507,10 +1510,6 @@ p, ul li a, .nav-links a, .nav-links span{
         flex: 0 0 100%;
         max-width: 100%;
     }       
-
-    .brand{
-        margin-bottom: 15px;
-    }
 
     .main-menu{
         border-top: 2px solid #f2f2f2;

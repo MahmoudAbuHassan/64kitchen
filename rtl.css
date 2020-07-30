@@ -10,9 +10,8 @@ body {
 /* Header - Main Menu */
 
 .account ul li a{
-    padding: 0 0 0 1rem !important;
+    padding: 0 0 0 0 !important;
 }
-
 
 .main-menu ul li{ 
     margin: 0 0 0 5px;
@@ -21,6 +20,7 @@ body {
 .main-menu ul li a.nav-link:first-child{ 
     display: flex;
     padding-right: 0 !important;
+    padding-left: 20px;
 }
 
 
@@ -45,10 +45,18 @@ body {
 }
 
 .main-menu .dropdown-menu .dropdown-menu { 
-
     right: 100%;
 }
 
+.navbar-expand .navbar-nav {
+    padding-right: 0;
+}
+
+/*  */
+
+.account.col-12.d-flex {
+    padding-top: 23px;
+}
 
 /* Frontend Product Lists */
 .home main .section-title{
@@ -74,7 +82,6 @@ body {
     background: #f8f8f8 !important;
     font-size:4rem;   
 }
-
 
 /* Footer - Footer Menu */
 
