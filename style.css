@@ -115,10 +115,15 @@ header .brand img{
     color: #CA2424; 
 }
 
+a.dropdown-item{
+    color: black;
+    background-color: whitesmoke;
+}
+
 .main-menu .dropdown-item:focus, 
 .main-menu .dropdown-item:hover {
-    color: #fff;
-    background-color: #272c33;
+    color: black;
+    background-color: wheat;
 }
 
 .main-menu .dropdown:hover>.dropdown-menu, 
