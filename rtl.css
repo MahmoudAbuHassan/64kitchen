@@ -147,12 +147,12 @@ body {
     display: table;
 }
 
-/* .shop-content{
-    direction: ltr;
-} */
-
 .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images{
     direction: ltr;
+}
+
+ul.products.columns-1 {
+    text-align-last: right;
 }
 
 /* Blog and Archive Pages */

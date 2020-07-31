@@ -572,7 +572,7 @@ li#tab-title-description{
     color: #000;
     margin: 0;
     padding: 0;
-    display: table;
+    display: inherit;
 }
 
 .post-type-archive-product .woocommerce-loop-product__title{
@@ -1673,8 +1673,4 @@ p, ul li a, .nav-links a, .nav-links span{
 
 .woocommerce div.product .woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n+1){
     clear: none;
-}
-
-.flexslider{
-    direction: ltr !important;
 }
