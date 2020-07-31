@@ -118,6 +118,7 @@ header .brand img{
 a.dropdown-item{
     color: black;
     background-color: whitesmoke;
+    display: flex;
 }
 
 .main-menu .dropdown-item:focus, 
@@ -555,8 +556,14 @@ ul#menu-64-kitchen-footer-menu {
     padding: 0;
 }
 
+.woocommerce .woocommerce-breadcrumb{
+    font-weight: 500;
+    color: rgb(0 0 0 / 80%);
+}
+
 .woocommerce .woocommerce-breadcrumb a {
     font-weight: 700;
+    color: rgb(0 0 0 / 80%);
 }
 
 .woocommerce ul.products.columns-1 li.product:first-child, 
