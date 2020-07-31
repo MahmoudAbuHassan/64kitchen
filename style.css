@@ -489,6 +489,8 @@ li#tab-title-description{
 
 .copyright p{
     margin: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .footer-menu ul, .footer-widgets ul{ 
@@ -514,6 +516,10 @@ li#tab-title-description{
 
 .footer-menu ul li.current-menu-item a{ 
     color: #ff9292; 
+}
+
+ul#menu-64-kitchen-footer-menu {
+    display: flex;
 }
 
 
@@ -1625,12 +1631,18 @@ p, ul li a, .nav-links a, .nav-links span{
     .flexslider img{
         height: 300px !important;
     }
+
+    .copyright p{
+        justify-content: flex-start;
+    }
 }
 
 @media all and (max-width: 500px){
     .woocommerce ul.products li.product a img {
         width: 100%;
     }
+
+
 }
 
 /* ----------------------------------------------------RTL------------------------------------------------ */
