@@ -1,6 +1,7 @@
 body {
 	direction: rtl;
-	unicode-bidi: embed;
+    unicode-bidi: embed;
+    text-align: right;
 }
 
 
@@ -32,7 +33,6 @@ body {
 
 .main-menu ul li .dropdown-menu .dropdown > a::after{
     margin-right: 0.355em;
-;
     border-left: 0.3em solid transparent;
     border-bottom: 0;
     transform: rotate(90deg);

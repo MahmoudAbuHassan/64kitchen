@@ -33,7 +33,7 @@
 			<section class="copyright">
 				<div class="container">
 					<div class="row">
-						<nav class="footer-menu col-12 col-md-6 text-left text-md-right">
+						<nav class="footer-menu col-12 col-lg-6 text-left text-md-right">
 						<?php
 							wp_nav_menu(
 								array(
@@ -42,7 +42,7 @@
 							);
 						?>
 						</nav>
-						<div class="copyright-text col-12 col-md-6">
+						<div class="copyright-text col-12 col-lg-6">
 							<p><?php echo esc_html( get_theme_mod( 'set_copyright', esc_html__( 'Copyright X - All Rights Reserved', '64kitchen' ) ) ); ?></p>
 						</div>
 					</div>

@@ -579,7 +579,7 @@ ul#menu-64-kitchen-footer-menu {
     width: 255px;
     height: auto;
     display: block;
-    margin: 0 1em 1em 0;
+    margin: 0 0.8em 1em 0;
     box-shadow: none;
     float: left;
 }
@@ -1649,14 +1649,17 @@ p, ul li a, .nav-links a, .nav-links span{
     }
 }
 
-@media all and (max-width: 500px){
+@media (max-width: 500px){
     .woocommerce ul.products li.product a img {
         width: 100%;
     }
+}  
 
-
+@media (max-width: 992px){
+    .copyright p{
+        justify-content: flex-start;
+    }
 }
-
 /* ----------------------------------------------------RTL------------------------------------------------ */
 
 /* Deal of the week */
