@@ -35,7 +35,7 @@ get_header(); ?>
 									<div class="slider-title">
 										<h1><?php the_title(); ?></h1>
 									</div>
-									<div class="subtitle"><?php the_content(); ?></div>
+									<div class="subtitle d-flex justify-content-center"><?php the_content(); ?></div>
 									<div class="slider-description">
 										<a class="link" href="<?php echo esc_url( $slider_button_url[$j] ); ?>"><?php echo esc_html( $slider_button_text[$j] ); ?></a>
 									</div>

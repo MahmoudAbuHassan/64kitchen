@@ -263,6 +263,10 @@ header .brand img{
     margin: 0 2px !important;
 }
 
+subtitle-middle{
+    justify-content: center;
+}
+
 
 /* Frontend Product Lists */
 .home main .section-title{

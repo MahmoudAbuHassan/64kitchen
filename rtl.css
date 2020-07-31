@@ -147,6 +147,14 @@ body {
     display: table;
 }
 
+/* .shop-content{
+    direction: ltr;
+} */
+
+.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images{
+    direction: ltr;
+}
+
 /* Blog and Archive Pages */
 /* Single */
 /* Comments */
