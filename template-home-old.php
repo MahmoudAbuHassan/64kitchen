@@ -52,37 +52,6 @@ get_header(); ?>
 					</div>
 				</section><!-- End of Slider -->
 
-				<!-- Blog -->
-				<section class="sixty4kitchen-blog">
-					<div class="container">
-					<div class="section-title">
-							<h2><?php echo esc_html( get_theme_mod( 'set_blog_text', __('', '64kitchen') ) ); ?></h2>
-						</div>
-						<div class="row">
-							<?php
-
-							$args = array(
-								''
-							);
-
-								// If there are any posts 
-								if( have_posts() ):
-
-									// Load posts loop
-									while( have_posts() ): the_post();
-										?>
-												<?php the_content(); ?>
-										<?php
-									endwhile;
-									wp_reset_postdata();
-								else:	
-							?>
-								<p><?php esc_html_e( 'Nothing to display.','64kitchen' )  ?></p>
-							<?php endif; ?>
-						</div>
-					</div>
-				</section><!-- End of Blog -->
-
 				<!-- Popular Products -->
 				<section class="popular-products">
 					<?php 
@@ -165,7 +134,51 @@ get_header(); ?>
 				<?php endif; ?>
 				<?php endif; ?><!-- End of Deal of the Week -->
 				
+				<!-- Blog -->
+				<section class="sixty4kitchen-blog">
+					<div class="container">
+					<div class="section-title">
+							<h2><?php echo esc_html( get_theme_mod( 'set_blog_text', __('News From Our Blog', '64kitchen') ) ); ?></h2>
+						</div>
+						<div class="row">
+							<?php
 
+							$args = array(
+								'post_type'			=> 'post',
+								'posts_per_page'	=>	'2'
+							);
+
+							$blog_posts = new WP_Query( $args );
+
+								// If there are any posts 
+								if( $blog_posts->have_posts() ):
+
+									// Load posts loop
+									while( $blog_posts->have_posts() ): $blog_posts->the_post();
+										?>
+											<article class="col-12 col-md-6">
+												<a href="<?php the_permalink(); ?>">
+													<?php 
+														if( has_post_thumbnail() ):
+															the_post_thumbnail( 'sixty4kitchen-blog', array( 'class' => 'img-fluid' ) );
+														endif;
+													?>
+												</a>
+												<h3>
+													<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+												</h3>
+												<div class="excerpt"><?php the_excerpt(); ?></div>
+											</article>
+										<?php
+									endwhile;
+									wp_reset_postdata();
+								else:	
+							?>
+								<p><?php esc_html_e( 'Nothing to display.','64kitchen' )  ?></p>
+							<?php endif; ?>
+						</div>
+					</div>
+				</section><!-- End of Blog -->
 				
 			</main>
 		</div>
