@@ -33,7 +33,7 @@ body{
 
 header .top-bar{
     padding: 0.2rem 0 0 0;
-    background-color: whitesmoke;
+    background-color: rgb(131 91 50 / 21%);
 }
 
 header p.site-title{
@@ -111,8 +111,9 @@ header .brand img{
     color: black;
 }
 
-.main-menu .navbar-nav .active>.nav-link{ 
-    color: #CA2424; 
+.main-menu .navbar-nav .active>.nav-link,
+a.nav-link{ 
+    color: crimson; 
 }
 
 a.dropdown-item{
