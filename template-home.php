@@ -179,6 +179,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</section><!-- End of Blog -->
+				
 			</main>
 		</div>
 <?php get_footer(); ?>
