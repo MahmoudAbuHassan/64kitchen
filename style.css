@@ -796,6 +796,25 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
     width: 150px;
 }
 
+.woocommerce-message {
+    border-top-color: rgb(210 51 91);
+}
+
+
+.woocommerce-message::before{
+    color: rgb(210 51 91); 
+}
+
+.woocommerce-info::before {
+    color: rgb(210 51 91);
+}
+
+.woocommerce-info {
+    border-top-color: rgb(210 51 91);
+
+    
+}
+
 /* Checkout */
 .woocommerce form .form-row {
     display: block;
@@ -1267,7 +1286,7 @@ li.comment {
 }
 
 .footer-widgets .widget_calendar tfoot {
-    background-color: #737070;
+    background-color: #bdbdbd;
 }
 
 .footer-widgets .widget_calendar table caption {
@@ -1529,7 +1548,7 @@ button, input, optgroup, select, textarea {
 }
 
 a{
-    color: #d35758;
+    color: rgb(210 51 91);
 }
 
 a:hover {
