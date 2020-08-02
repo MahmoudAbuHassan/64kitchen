@@ -780,14 +780,15 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 .woocommerce a.button, 
 .woocommerce button.button, 
 .woocommerce input.button{
-    background-color: #ffeb8a;
+    background-color: rgb(210 51 91);
+    color: white;
 }
 
 .woocommerce #respond input#submit:hover, 
 .woocommerce a.button:hover, 
 .woocommerce button.button:hover, 
 .woocommerce input.button:hover{
-    background-color: #ffe252;
+    background-color: rgb(210 51 91);
 }
 
 /* Cart */
