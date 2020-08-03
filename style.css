@@ -291,6 +291,10 @@ subtitle-middle{
     box-shadow: inset 0 0 10px 20px rgb(210 51 91);
 }
 
+span.sbi-screenreader {
+    color: rgb(131 91 50 / 0%);
+}
+
 .home main .section-title{
     position: relative;
     margin-bottom: 20px;
@@ -578,6 +582,8 @@ span.quantity {
 
 main#main{
     padding-top:30px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 .shop-content{
@@ -1680,14 +1686,6 @@ p, ul li a, .nav-links a, .nav-links span{
     .slider-details-container a {
         padding: 0.5em;
     }
-    main#main {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    main#main {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
 }
 
 @media all and (max-width: 768px)  {
@@ -1722,7 +1720,7 @@ p, ul li a, .nav-links a, .nav-links span{
 }
 
 /* Woocommerce shop page */
-
+/* 
 @media (min-width: 768px){
     main#main {
         padding-right: 40px;
@@ -1770,7 +1768,7 @@ p, ul li a, .nav-links a, .nav-links span{
         padding-right: 360px;
         padding-left: 360px;
     }
-}
+} */
 /* ----------------------------------------------------RTL------------------------------------------------ */
 
 /* Deal of the week */
