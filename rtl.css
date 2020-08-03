@@ -1,6 +1,7 @@
 body {
 	direction: rtl;
-	unicode-bidi: embed;
+    unicode-bidi: embed;
+    text-align: right;
 }
 
 
@@ -32,7 +33,6 @@ body {
 
 .main-menu ul li .dropdown-menu .dropdown > a::after{
     margin-right: 0.355em;
-;
     border-left: 0.3em solid transparent;
     border-bottom: 0;
     transform: rotate(90deg);
@@ -145,6 +145,14 @@ body {
 
 .woocommerce .woocommerce-breadcrumb{
     display: table;
+}
+
+.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images{
+    direction: ltr;
+}
+
+ul.products.columns-1 {
+    text-align-last: right;
 }
 
 /* Blog and Archive Pages */

@@ -7,36 +7,8 @@
  * @package 64 Kitchen
  */
 function sixty4kitchen_wc_modify(){
-    add_action( 'woocommerce_before_main_content', 'sixty4kitchen_open_container_row', 5);
-    function sixty4kitchen_open_container_row(){
-        echo '<div class="container shop-content"><div class="row">';
-    }
-
-    if( is_shop() ){    
-        add_action( 'woocommerce_before_main_content', 'sixty4kitchen_close_sidebar_tags', 8 );
-        function sixty4kitchen_close_sidebar_tags(){
-            echo '</div>';
-        }
-    }
 
     remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar' );
-    
-    add_action( 'woocommerce_before_main_content', 'sixty4kitchen_add_shop_tags', 9 );
-    function sixty4kitchen_add_shop_tags(){
-        if( is_shop() ){
-            echo '<div class="col">';
-        }
-    }
-
-    add_action( 'woocommerce_after_main_content', 'sixty4kitchen_close_shop_tags', 4 );
-    function sixty4kitchen_close_shop_tags(){
-        echo '</div>';
-    }
-
-    add_action( 'woocommerce_after_main_content', 'sixty4kitchen_close_container_row', 5);
-    function sixty4kitchen_close_container_row(){
-        echo '</div></div>';
-    }
 
     add_action( 'woocommerce_after_shop_loop_item_title', 'the_excerpt', 1 );
 }
