@@ -342,6 +342,7 @@ span.sbi-screenreader {
 
 .woocommerce div.product .product_title{
     display: flex;
+    font-family: 'Seaweed Script';
 }
 
 p.price{
@@ -630,6 +631,7 @@ main#main{
 }
 
 .woocommerce ul.products li.product .woocommerce-loop-product__title{
+    font-family: 'Seaweed Script';
     font-size: 25px;
     font-weight: 700;
     color: #000;
