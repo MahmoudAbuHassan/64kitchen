@@ -866,11 +866,11 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 
 .woocommerce-MyAccount-navigation .is-active{
     font-weight: 700;
-    background-color: #000000;   
+    background-color: rgb(131 91 50 / 43%);   
 }
 
 .woocommerce-MyAccount-navigation .is-active a{
-    color: #fff;    
+    color: black;    
 }
 
 .woocommerce-MyAccount-navigation ul{
@@ -1598,6 +1598,13 @@ p, ul li a, .nav-links a, .nav-links span{
     height: auto;
 }
 
+/* my-account */
+
+mark.order-number,
+mark.order-date,
+mark.order-status {
+    background-color: inherit;
+}
 
 /* Media Queries */
 
