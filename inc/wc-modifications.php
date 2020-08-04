@@ -60,3 +60,12 @@ function reduce_min_strength_password_requirement( $strength ) {
  * Remove related products output
  */
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+// Remove downloads from my account page
+
+add_filter( 'woocommerce_account_menu_items', 'custom_remove_downloads_my_account', 999 );
+ 
+function custom_remove_downloads_my_account( $items ) {
+unset($items['downloads']);
+return $items;
+}
