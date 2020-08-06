@@ -62,7 +62,7 @@ function sixty4kitchen_config(){
     
     add_theme_support( 'woocommerce', array(
         'thumbnail_image_width' => 255,
-        'single_image_width'	=> 255,
+        'single_image_width'	=> 400,
         'product_grid' 			=> array(
             'default_rows'      => 10,
             'min_rows'          => 5,
